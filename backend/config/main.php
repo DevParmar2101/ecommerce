@@ -1,4 +1,5 @@
 <?php
+use yii\web\Request;
 $params = array_merge(
     require __DIR__ . '/../../common/config/params.php',
     require __DIR__ . '/../../common/config/params-local.php',
@@ -6,6 +7,7 @@ $params = array_merge(
     require __DIR__ . '/params-local.php'
 );
 
+$baseUrl = str_replace('backend/web','',(new Request())->getBaseUrl());
 return [
     'id' => 'app-backend',
     'basePath' => dirname(__DIR__),
