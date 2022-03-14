@@ -10,7 +10,8 @@ use yii\helpers\Html;
                 <div class="footer-column footer-width-26 footer-logo-center">
                     <div class="footer-widget footer-logo mb-30">
                         <a href="index.html">
-                            <img src="assets/images/logo/logo-white.png" alt="logo">
+                            <?= Html::img('@web/images/logo/logo-white.png')?>
+<!--                            <img src="assets/images/logo/logo-white.png" alt="logo">-->
                         </a>
                     </div>
                 </div>
@@ -71,7 +72,10 @@ use yii\helpers\Html;
                 </div>
                 <div class="col-lg-4 col-md-4 col-12">
                     <div class="footer-payment">
-                        <a href="#"><img src="assets/images/icon-img/paypal.png" alt="payment"></a>
+                        <a href="#">
+                            <?= Html::img('@web/images/icon-img/paypal.png')?>
+<!--                            <img src="assets/images/icon-img/paypal.png" alt="payment">-->
+                        </a>
                     </div>
                 </div>
             </div>

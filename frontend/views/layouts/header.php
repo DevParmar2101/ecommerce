@@ -11,219 +11,6 @@ use yii\helpers\Html;
                         <nav>
                             <ul>
                                 <li class="position-static"><a class="active" href="index.html">Home <i class="fa fa-angle-down"></i></a>
-                                    <div class="mega-menu-style-1">
-                                        <div class="mega-menu-inner">
-                                            <div class="demo-item mb-40">
-                                                <div class="demo-item-img">
-                                                    <a href="index.html">
-                                                        <img src="assets/images/menu/h-1.jpg" alt="demo-img">
-                                                        <span>View Demo</span>
-                                                    </a>
-                                                </div>
-                                                <div class="demo-item-content">
-                                                    <h4><a href="index.html">Home Demo 01</a></h4>
-                                                </div>
-                                            </div>
-                                            <div class="demo-item mb-40">
-                                                <div class="demo-item-img">
-                                                    <a href="index-2.html">
-                                                        <img src="assets/images/menu/h-2.jpg" alt="demo-img">
-                                                        <span>View Demo</span>
-                                                    </a>
-                                                </div>
-                                                <div class="demo-item-content">
-                                                    <h4><a href="index-2.html">Home Demo 02</a></h4>
-                                                </div>
-                                            </div>
-                                            <div class="demo-item mb-40">
-                                                <div class="demo-item-img">
-                                                    <a href="index-3.html">
-                                                        <img src="assets/images/menu/h-3.jpg" alt="demo-img">
-                                                        <span>View Demo</span>
-                                                    </a>
-                                                </div>
-                                                <div class="demo-item-content">
-                                                    <h4><a href="index-3.html">Home Demo 03</a></h4>
-                                                </div>
-                                            </div>
-                                            <div class="demo-item mb-40">
-                                                <div class="demo-item-img">
-                                                    <a href="index-4.html">
-                                                        <img src="assets/images/menu/h-4.jpg" alt="demo-img">
-                                                        <span>View Demo</span>
-                                                    </a>
-                                                </div>
-                                                <div class="demo-item-content">
-                                                    <h4><a href="index-4.html">Home Demo 04</a></h4>
-                                                </div>
-                                            </div>
-                                            <div class="demo-item mb-40">
-                                                <div class="demo-item-img">
-                                                    <a href="index-5.html">
-                                                        <img src="assets/images/menu/h-5.jpg" alt="demo-img">
-                                                        <span>View Demo</span>
-                                                    </a>
-                                                </div>
-                                                <div class="demo-item-content">
-                                                    <h4><a href="index-5.html">Home Demo 05</a></h4>
-                                                </div>
-                                            </div>
-                                            <div class="demo-item mb-40">
-                                                <div class="demo-item-img">
-                                                    <a href="index-6.html">
-                                                        <img src="assets/images/menu/h-6.jpg" alt="demo-img">
-                                                        <span>View Demo</span>
-                                                    </a>
-                                                </div>
-                                                <div class="demo-item-content">
-                                                    <h4><a href="index-6.html">Home Demo 06</a></h4>
-                                                </div>
-                                            </div>
-                                            <div class="demo-item mb-40">
-                                                <div class="demo-item-img">
-                                                    <a href="index-7.html">
-                                                        <img src="assets/images/menu/h-7.jpg" alt="demo-img">
-                                                        <span>View Demo</span>
-                                                    </a>
-                                                </div>
-                                                <div class="demo-item-content">
-                                                    <h4><a href="index-7.html">Home Demo 07</a></h4>
-                                                </div>
-                                            </div>
-                                            <div class="demo-item mb-40">
-                                                <div class="demo-item-img">
-                                                    <a href="index-8.html">
-                                                        <img src="assets/images/menu/h-8.jpg" alt="demo-img">
-                                                        <span>View Demo</span>
-                                                    </a>
-                                                </div>
-                                                <div class="demo-item-content">
-                                                    <h4><a href="index-8.html">Home Demo 08</a></h4>
-                                                </div>
-                                            </div>
-                                            <div class="demo-item mb-40">
-                                                <div class="demo-item-img">
-                                                    <a href="index-9.html">
-                                                        <img src="assets/images/menu/h-9.jpg" alt="demo-img">
-                                                        <span>View Demo</span>
-                                                    </a>
-                                                </div>
-                                                <div class="demo-item-content">
-                                                    <h4><a href="index-9.html">Home Demo 09</a></h4>
-                                                </div>
-                                            </div>
-                                            <div class="demo-item mb-40">
-                                                <div class="demo-item-img">
-                                                    <a href="index-10.html">
-                                                        <img src="assets/images/menu/h-10.jpg" alt="demo-img">
-                                                        <span>View Demo</span>
-                                                    </a>
-                                                </div>
-                                                <div class="demo-item-content">
-                                                    <h4><a href="index-10.html">Home Demo 10</a></h4>
-                                                </div>
-                                            </div>
-                                            <div class="demo-item mb-40">
-                                                <div class="demo-item-img">
-                                                    <a href="index-11.html">
-                                                        <img src="assets/images/menu/h-11.jpg" alt="demo-img">
-                                                        <span>View Demo</span>
-                                                    </a>
-                                                </div>
-                                                <div class="demo-item-content">
-                                                    <h4><a href="index-11.html">Home Demo 11</a></h4>
-                                                </div>
-                                            </div>
-                                            <div class="demo-item mb-40">
-                                                <div class="demo-item-img">
-                                                    <a href="index-12.html">
-                                                        <img src="assets/images/menu/h-12.jpg" alt="demo-img">
-                                                        <span>View Demo</span>
-                                                    </a>
-                                                </div>
-                                                <div class="demo-item-content">
-                                                    <h4><a href="index-12.html">Home Demo 12</a></h4>
-                                                </div>
-                                            </div>
-                                            <div class="demo-item mb-40">
-                                                <div class="demo-item-img">
-                                                    <a href="index-13.html">
-                                                        <img src="assets/images/menu/h-13.jpg" alt="demo-img">
-                                                        <span>View Demo</span>
-                                                    </a>
-                                                </div>
-                                                <div class="demo-item-content">
-                                                    <h4><a href="index-13.html">Home Demo 13</a></h4>
-                                                </div>
-                                            </div>
-                                            <div class="demo-item mb-40">
-                                                <div class="demo-item-img">
-                                                    <a href="index-14.html">
-                                                        <img src="assets/images/menu/h-14.jpg" alt="demo-img">
-                                                        <span>View Demo</span>
-                                                    </a>
-                                                </div>
-                                                <div class="demo-item-content">
-                                                    <h4><a href="index-14.html">Home Demo 14</a></h4>
-                                                </div>
-                                            </div>
-                                            <div class="demo-item mb-40">
-                                                <div class="demo-item-img">
-                                                    <a href="index-15.html">
-                                                        <img src="assets/images/menu/h-15.jpg" alt="demo-img">
-                                                        <span>View Demo</span>
-                                                    </a>
-                                                </div>
-                                                <div class="demo-item-content">
-                                                    <h4><a href="index-15.html">Home Demo 15</a></h4>
-                                                </div>
-                                            </div>
-                                            <div class="demo-item mb-40">
-                                                <div class="demo-item-img">
-                                                    <a href="index-16.html">
-                                                        <img src="assets/images/menu/h-16.jpg" alt="demo-img">
-                                                        <span>View Demo</span>
-                                                    </a>
-                                                </div>
-                                                <div class="demo-item-content">
-                                                    <h4><a href="index-16.html">Home Demo 16</a></h4>
-                                                </div>
-                                            </div>
-                                            <div class="demo-item mb-40">
-                                                <div class="demo-item-img">
-                                                    <a href="index-17.html">
-                                                        <img src="assets/images/menu/h-17.jpg" alt="demo-img">
-                                                        <span>View Demo</span>
-                                                    </a>
-                                                </div>
-                                                <div class="demo-item-content">
-                                                    <h4><a href="index-17.html">Home Demo 17</a></h4>
-                                                </div>
-                                            </div>
-                                            <div class="demo-item mb-40">
-                                                <div class="demo-item-img">
-                                                    <a href="index-18.html">
-                                                        <img src="assets/images/menu/h-18.jpg" alt="demo-img">
-                                                        <span>View Demo</span>
-                                                    </a>
-                                                </div>
-                                                <div class="demo-item-content">
-                                                    <h4><a href="index-18.html">Home Demo 18</a></h4>
-                                                </div>
-                                            </div>
-                                            <div class="demo-item mb-40">
-                                                <div class="demo-item-img">
-                                                    <a href="index-19.html">
-                                                        <img src="assets/images/menu/h-19.jpg" alt="demo-img">
-                                                        <span>View Demo</span>
-                                                    </a>
-                                                </div>
-                                                <div class="demo-item-content">
-                                                    <h4><a href="index-19.html">Home Demo 19</a></h4>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
                                 </li>
                                 <li><a href="#">Pages <i class="fa fa-angle-down"></i></a>
                                     <ul class="sub-menu-width">
@@ -274,7 +61,9 @@ use yii\helpers\Html;
                                         </li>
                                         <li class="mega-menu-sub-width37">
                                             <div class="banner-menu-content-wrap default-overlay">
-                                                <a href="product-details.html"><img src="assets/images/menu/banner-header.jpg" alt="banner"></a>
+                                                <a href="product-details.html">
+                                                    <?= Html::img('@web/images/menu/banner-header.jpg')?>
+                                                </a>
                                                 <div class="banner-menu-content">
                                                     <h2>Bikini <br>Collections</h2>
                                                 </div>
@@ -310,7 +99,7 @@ use yii\helpers\Html;
                 <div class="col-xl-2 col-lg-2">
                     <div class="logo logo-width ml-20">
                         <a href="index.html">
-                            <img src="assets/images/logo/logo-white.png" alt="logo">
+                            <?= Html::img('@web/images/logo/logo-white.png')?>
                         </a>
                     </div>
                 </div>
@@ -353,7 +142,7 @@ use yii\helpers\Html;
             <div class="col-6">
                 <div class="mobile-logo logo-width">
                     <a href="index.html">
-                        <img alt="" src="assets/images/logo/logo.png">
+                        <?= Html::img('@web/images/logo/logo.png')?>
                     </a>
                 </div>
             </div>
