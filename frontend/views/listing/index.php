@@ -30,10 +30,10 @@ $this->title = 'Listing Page';
                     <div class="shop-top-bar">
                         <div class="shop-top-bar-right text-left">
                             <div class="shop-filter ml-50">
-                                <a class="shop-filter-active" href="#">Filters <i class="fa fa-angle-down angle-down"></i> <i class="fa fa-angle-up angle-up"></i></a>
+                                <a class="shop-filter-active btn btn-secondary" href="#">Filters <i class="fa fa-angle-down angle-down"></i> <i class="fa fa-angle-up angle-up"></i></a>
                             </div>
                             <div class="shop-short-by ml-50">
-                                <span>Sort by <i class="fa fa-angle-down angle-down"></i> <i class="fa fa-angle-up angle-up"></i></span>
+                                <span class="btn btn-secondary">Sort by <i class="fa fa-angle-down angle-down"></i> <i class="fa fa-angle-up angle-up"></i></span>
                                 <ul>
                                     <li class="active"><a href="#">Default sorting</a></li>
                                     <li><a href="#">Sort by popularity</a></li>
