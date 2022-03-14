@@ -5,22 +5,7 @@ use yii\helpers\Html;
 $this->title = 'Listing Page';
 ?>
 
-<div class="breadcrumb-area section-padding-1 breadcrumb-bg-1 breadcrumb-ptb-2">
-    <div class="container-fluid">
-        <div class="breadcrumb-content text-center">
-            <div class="breadcrumb-title">
-                <h2>Shop Sidebar</h2>
-            </div>
-            <ul>
-                <li>
-                    <a href="index.html">Home 01 </a>
-                </li>
-                <li><span> &gt; </span></li>
-                <li class="active"> shop </li>
-            </ul>
-        </div>
-    </div>
-</div>
+<?= $this->render('partial/_listing_breadcrumb')?>
 
 <div class="shop-area section-padding-3 pt-70 pb-100">
     <div class="container-fluid">
