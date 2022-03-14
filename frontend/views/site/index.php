@@ -4,7 +4,5 @@
 
 $this->title = 'My Yii Application';
 ?>
-<div class="main-wrapper">
     <?= $this->render('partial/_slider_area')?>
-
-</div>
+    <?= $this->render('partial/_car_area')?>
