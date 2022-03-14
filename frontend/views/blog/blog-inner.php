@@ -1,6 +1,8 @@
 <?php
 
 use yii\helpers\Html;
+
+$this->title = 'Blog Inner';
 ?>
 
 <div class="breadcrumb-area section-padding-1 bg-gray breadcrumb-ptb-2">
