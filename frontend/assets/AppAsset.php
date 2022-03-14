@@ -53,7 +53,8 @@ class AppAsset extends AssetBundle
         'js/plugins/cookie.js',
         'js/plugins/bpopup.js',
         'js/plugins/wow.js',
-        'js/plugins/ajax-mail.js'
+        'js/plugins/ajax-mail.js',
+        'js/main.js'
     ];
     public $depends = [
         'yii\web\YiiAsset',
