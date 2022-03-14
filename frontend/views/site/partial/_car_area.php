@@ -32,8 +32,8 @@ use yii\helpers\Html;
                         <div class="product-wrap mb-50">
                             <div class="product-img default-overlay mb-25">
                                 <a href="product-details.html">
-                                    <img class="default-img" src="assets/images/product/product-14.jpg" alt="">
-                                    <img class="hover-img" src="assets/images/product/product-14-2.jpg" alt="">
+                                    <?= Html::img('@web/images/product/product-14.jpg',['class' => 'default-img'])?>
+                                    <?= Html::img('@web/images/product/product-14-2.jpg',['class' => 'hover-img'])?>
                                 </a>
                                 <div class="product-action product-action-position-1">
                                     <a data-bs-toggle="modal" data-bs-target="#exampleModal" href="#"><i class="fa fa-eye"></i><span>Quick Shop</span></a>
@@ -54,8 +54,8 @@ use yii\helpers\Html;
                         <div class="product-wrap mb-50">
                             <div class="product-img default-overlay mb-25">
                                 <a href="product-details.html">
-                                    <img class="default-img" src="assets/images/product/product-2.jpg" alt="">
-                                    <img class="hover-img" src="assets/images/product/product-2-2.jpg" alt="">
+                                    <?= Html::img('@web/images/product/product-2.jpg',['class' => 'default-img'])?>
+                                    <?= Html::img('@web/images/product/product-2-2.jpg',['class' => 'hover-img'])?>
                                 </a>
                                 <div class="product-action product-action-position-1">
                                     <a data-bs-toggle="modal" data-bs-target="#exampleModal" href="#"><i class="fa fa-eye"></i><span>Quick Shop</span></a>
@@ -76,8 +76,8 @@ use yii\helpers\Html;
                         <div class="product-wrap mb-50">
                             <div class="product-img default-overlay mb-25">
                                 <a href="product-details.html">
-                                    <img class="default-img" src="assets/images/product/product-11.jpg" alt="">
-                                    <img class="hover-img" src="assets/images/product/product-11-2.jpg" alt="">
+                                    <?= Html::img('@web/images/product/product-11.jpg',['class' => 'default-img'])?>
+                                    <?= Html::img('@web/images/product/product-11-2.jpg',['class' => 'hover-img'])?>
                                 </a>
                                 <div class="product-action product-action-position-1">
                                     <a data-bs-toggle="modal" data-bs-target="#exampleModal" href="#"><i class="fa fa-eye"></i><span>Quick Shop</span></a>
@@ -98,8 +98,8 @@ use yii\helpers\Html;
                         <div class="product-wrap mb-50">
                             <div class="product-img default-overlay mb-25">
                                 <a href="product-details.html">
-                                    <img class="default-img" src="assets/images/product/product-10.jpg" alt="">
-                                    <img class="hover-img" src="assets/images/product/product-10-2.jpg" alt="">
+                                    <?= Html::img('@web/images/product/product-10.jpg',['class' => 'default-img'])?>
+                                    <?= Html::img('@web/images/product/product-10-2.jpg',['class' => 'hover-img'])?>
                                     <span class="badge-black badge-left-20 badge-top-20 badge-width-height-2 badge-border-radius-100">7.7%</span>
                                 </a>
                                 <div class="product-action product-action-position-1">
@@ -122,8 +122,8 @@ use yii\helpers\Html;
                         <div class="product-wrap mb-50">
                             <div class="product-img default-overlay mb-25">
                                 <a href="product-details.html">
-                                    <img class="default-img" src="assets/images/product/product-8.jpg" alt="">
-                                    <img class="hover-img" src="assets/images/product/product-8-2.jpg" alt="">
+                                    <?= Html::img('@web/images/product/product-8.jpg',['class' => 'default-img'])?>
+                                    <?= Html::img('@web/images/product/product-8-2.jpg',['class' => 'hover-img'])?>
                                 </a>
                                 <div class="product-action product-action-position-1">
                                     <a data-bs-toggle="modal" data-bs-target="#exampleModal" href="#"><i class="fa fa-eye"></i><span>Quick Shop</span></a>
@@ -144,8 +144,8 @@ use yii\helpers\Html;
                         <div class="product-wrap mb-50">
                             <div class="product-img default-overlay mb-25">
                                 <a href="product-details.html">
-                                    <img class="default-img" src="assets/images/product/product-7.jpg" alt="">
-                                    <img class="hover-img" src="assets/images/product/product-7-2.jpg" alt="">
+                                    <?= Html::img('@web/images/product/product-7.jpg',['class' => 'default-img'])?>
+                                    <?= Html::img('@web/images/product/product-7-2.jpg',['class' => 'hover-img'])?>
                                 </a>
                                 <div class="product-action product-action-position-1">
                                     <a data-bs-toggle="modal" data-bs-target="#exampleModal" href="#"><i class="fa fa-eye"></i><span>Quick Shop</span></a>
@@ -163,25 +163,16 @@ use yii\helpers\Html;
                         </div>
                     </div>
                 </div>
-                <div class="btn-style-1 text-center">
-                    <a class="btn-border" href="shop-fullwide.html">
-                        <div class="btn-viewmore-normal btn-ptb-1 btn-viewmore-bg-transparent btn-viewmore-common">
-                            <span>View all products</span>
-                        </div>
-                        <div class="btn-viewmore-hover btn-ptb-1 btn-viewmore-common btn-hover-transition">
-                            <span>View all products</span>
-                        </div>
-                    </a>
-                </div>
             </div>
-            <div id="product-2" class="tab-pane">
+
+            <div id="product-2" class="tab-pane active">
                 <div class="row">
                     <div class="col-lg-4 col-md-6 col-sm-6 col-12">
                         <div class="product-wrap mb-50">
                             <div class="product-img default-overlay mb-25">
                                 <a href="product-details.html">
-                                    <img class="default-img" src="assets/images/product/product-16.jpg" alt="">
-                                    <img class="hover-img" src="assets/images/product/product-16-2.jpg" alt="">
+                                    <?= Html::img('@web/images/product/product-14.jpg',['class' => 'default-img'])?>
+                                    <?= Html::img('@web/images/product/product-14-2.jpg',['class' => 'hover-img'])?>
                                 </a>
                                 <div class="product-action product-action-position-1">
                                     <a data-bs-toggle="modal" data-bs-target="#exampleModal" href="#"><i class="fa fa-eye"></i><span>Quick Shop</span></a>
@@ -202,8 +193,8 @@ use yii\helpers\Html;
                         <div class="product-wrap mb-50">
                             <div class="product-img default-overlay mb-25">
                                 <a href="product-details.html">
-                                    <img class="default-img" src="assets/images/product/product-15.jpg" alt="">
-                                    <img class="hover-img" src="assets/images/product/product-15-2.jpg" alt="">
+                                    <?= Html::img('@web/images/product/product-2.jpg',['class' => 'default-img'])?>
+                                    <?= Html::img('@web/images/product/product-2-2.jpg',['class' => 'hover-img'])?>
                                 </a>
                                 <div class="product-action product-action-position-1">
                                     <a data-bs-toggle="modal" data-bs-target="#exampleModal" href="#"><i class="fa fa-eye"></i><span>Quick Shop</span></a>
@@ -224,8 +215,8 @@ use yii\helpers\Html;
                         <div class="product-wrap mb-50">
                             <div class="product-img default-overlay mb-25">
                                 <a href="product-details.html">
-                                    <img class="default-img" src="assets/images/product/product-14.jpg" alt="">
-                                    <img class="hover-img" src="assets/images/product/product-14-2.jpg" alt="">
+                                    <?= Html::img('@web/images/product/product-11.jpg',['class' => 'default-img'])?>
+                                    <?= Html::img('@web/images/product/product-11-2.jpg',['class' => 'hover-img'])?>
                                 </a>
                                 <div class="product-action product-action-position-1">
                                     <a data-bs-toggle="modal" data-bs-target="#exampleModal" href="#"><i class="fa fa-eye"></i><span>Quick Shop</span></a>
@@ -246,8 +237,8 @@ use yii\helpers\Html;
                         <div class="product-wrap mb-50">
                             <div class="product-img default-overlay mb-25">
                                 <a href="product-details.html">
-                                    <img class="default-img" src="assets/images/product/product-13.jpg" alt="">
-                                    <img class="hover-img" src="assets/images/product/product-13-2.jpg" alt="">
+                                    <?= Html::img('@web/images/product/product-10.jpg',['class' => 'default-img'])?>
+                                    <?= Html::img('@web/images/product/product-10-2.jpg',['class' => 'hover-img'])?>
                                     <span class="badge-black badge-left-20 badge-top-20 badge-width-height-2 badge-border-radius-100">7.7%</span>
                                 </a>
                                 <div class="product-action product-action-position-1">
@@ -270,8 +261,8 @@ use yii\helpers\Html;
                         <div class="product-wrap mb-50">
                             <div class="product-img default-overlay mb-25">
                                 <a href="product-details.html">
-                                    <img class="default-img" src="assets/images/product/product-12.jpg" alt="">
-                                    <img class="hover-img" src="assets/images/product/product-12-2.jpg" alt="">
+                                    <?= Html::img('@web/images/product/product-8.jpg',['class' => 'default-img'])?>
+                                    <?= Html::img('@web/images/product/product-8-2.jpg',['class' => 'hover-img'])?>
                                 </a>
                                 <div class="product-action product-action-position-1">
                                     <a data-bs-toggle="modal" data-bs-target="#exampleModal" href="#"><i class="fa fa-eye"></i><span>Quick Shop</span></a>
@@ -292,8 +283,8 @@ use yii\helpers\Html;
                         <div class="product-wrap mb-50">
                             <div class="product-img default-overlay mb-25">
                                 <a href="product-details.html">
-                                    <img class="default-img" src="assets/images/product/product-11.jpg" alt="">
-                                    <img class="hover-img" src="assets/images/product/product-11-2.jpg" alt="">
+                                    <?= Html::img('@web/images/product/product-7.jpg',['class' => 'default-img'])?>
+                                    <?= Html::img('@web/images/product/product-7-2.jpg',['class' => 'hover-img'])?>
                                 </a>
                                 <div class="product-action product-action-position-1">
                                     <a data-bs-toggle="modal" data-bs-target="#exampleModal" href="#"><i class="fa fa-eye"></i><span>Quick Shop</span></a>
@@ -311,25 +302,16 @@ use yii\helpers\Html;
                         </div>
                     </div>
                 </div>
-                <div class="btn-style-1 text-center">
-                    <a class="btn-border" href="shop-fullwide.html">
-                        <div class="btn-viewmore-normal btn-ptb-1 btn-viewmore-bg-transparent btn-viewmore-common">
-                            <span>View all products</span>
-                        </div>
-                        <div class="btn-viewmore-hover btn-ptb-1 btn-viewmore-common btn-hover-transition">
-                            <span>View all products</span>
-                        </div>
-                    </a>
-                </div>
             </div>
-            <div id="product-3" class="tab-pane">
+
+            <div id="product-3" class="tab-pane active">
                 <div class="row">
                     <div class="col-lg-4 col-md-6 col-sm-6 col-12">
                         <div class="product-wrap mb-50">
                             <div class="product-img default-overlay mb-25">
                                 <a href="product-details.html">
-                                    <img class="default-img" src="assets/images/product/product-10.jpg" alt="">
-                                    <img class="hover-img" src="assets/images/product/product-10-2.jpg" alt="">
+                                    <?= Html::img('@web/images/product/product-14.jpg',['class' => 'default-img'])?>
+                                    <?= Html::img('@web/images/product/product-14-2.jpg',['class' => 'hover-img'])?>
                                 </a>
                                 <div class="product-action product-action-position-1">
                                     <a data-bs-toggle="modal" data-bs-target="#exampleModal" href="#"><i class="fa fa-eye"></i><span>Quick Shop</span></a>
@@ -350,8 +332,8 @@ use yii\helpers\Html;
                         <div class="product-wrap mb-50">
                             <div class="product-img default-overlay mb-25">
                                 <a href="product-details.html">
-                                    <img class="default-img" src="assets/images/product/product-9.jpg" alt="">
-                                    <img class="hover-img" src="assets/images/product/product-9-2.jpg" alt="">
+                                    <?= Html::img('@web/images/product/product-2.jpg',['class' => 'default-img'])?>
+                                    <?= Html::img('@web/images/product/product-2-2.jpg',['class' => 'hover-img'])?>
                                 </a>
                                 <div class="product-action product-action-position-1">
                                     <a data-bs-toggle="modal" data-bs-target="#exampleModal" href="#"><i class="fa fa-eye"></i><span>Quick Shop</span></a>
@@ -372,8 +354,8 @@ use yii\helpers\Html;
                         <div class="product-wrap mb-50">
                             <div class="product-img default-overlay mb-25">
                                 <a href="product-details.html">
-                                    <img class="default-img" src="assets/images/product/product-8.jpg" alt="">
-                                    <img class="hover-img" src="assets/images/product/product-8-2.jpg" alt="">
+                                    <?= Html::img('@web/images/product/product-11.jpg',['class' => 'default-img'])?>
+                                    <?= Html::img('@web/images/product/product-11-2.jpg',['class' => 'hover-img'])?>
                                 </a>
                                 <div class="product-action product-action-position-1">
                                     <a data-bs-toggle="modal" data-bs-target="#exampleModal" href="#"><i class="fa fa-eye"></i><span>Quick Shop</span></a>
@@ -394,8 +376,8 @@ use yii\helpers\Html;
                         <div class="product-wrap mb-50">
                             <div class="product-img default-overlay mb-25">
                                 <a href="product-details.html">
-                                    <img class="default-img" src="assets/images/product/product-7.jpg" alt="">
-                                    <img class="hover-img" src="assets/images/product/product-7-2.jpg" alt="">
+                                    <?= Html::img('@web/images/product/product-10.jpg',['class' => 'default-img'])?>
+                                    <?= Html::img('@web/images/product/product-10-2.jpg',['class' => 'hover-img'])?>
                                     <span class="badge-black badge-left-20 badge-top-20 badge-width-height-2 badge-border-radius-100">7.7%</span>
                                 </a>
                                 <div class="product-action product-action-position-1">
@@ -418,8 +400,8 @@ use yii\helpers\Html;
                         <div class="product-wrap mb-50">
                             <div class="product-img default-overlay mb-25">
                                 <a href="product-details.html">
-                                    <img class="default-img" src="assets/images/product/product-6.jpg" alt="">
-                                    <img class="hover-img" src="assets/images/product/product-6-2.jpg" alt="">
+                                    <?= Html::img('@web/images/product/product-8.jpg',['class' => 'default-img'])?>
+                                    <?= Html::img('@web/images/product/product-8-2.jpg',['class' => 'hover-img'])?>
                                 </a>
                                 <div class="product-action product-action-position-1">
                                     <a data-bs-toggle="modal" data-bs-target="#exampleModal" href="#"><i class="fa fa-eye"></i><span>Quick Shop</span></a>
@@ -440,8 +422,8 @@ use yii\helpers\Html;
                         <div class="product-wrap mb-50">
                             <div class="product-img default-overlay mb-25">
                                 <a href="product-details.html">
-                                    <img class="default-img" src="assets/images/product/product-5.jpg" alt="">
-                                    <img class="hover-img" src="assets/images/product/product-5-2.jpg" alt="">
+                                    <?= Html::img('@web/images/product/product-7.jpg',['class' => 'default-img'])?>
+                                    <?= Html::img('@web/images/product/product-7-2.jpg',['class' => 'hover-img'])?>
                                 </a>
                                 <div class="product-action product-action-position-1">
                                     <a data-bs-toggle="modal" data-bs-target="#exampleModal" href="#"><i class="fa fa-eye"></i><span>Quick Shop</span></a>
@@ -459,25 +441,16 @@ use yii\helpers\Html;
                         </div>
                     </div>
                 </div>
-                <div class="btn-style-1 text-center">
-                    <a class="btn-border" href="shop-fullwide.html">
-                        <div class="btn-viewmore-normal btn-ptb-1 btn-viewmore-bg-transparent btn-viewmore-common">
-                            <span>View all products</span>
-                        </div>
-                        <div class="btn-viewmore-hover btn-ptb-1 btn-viewmore-common btn-hover-transition">
-                            <span>View all products</span>
-                        </div>
-                    </a>
-                </div>
             </div>
-            <div id="product-4" class="tab-pane">
+
+            <div id="product-4" class="tab-pane active">
                 <div class="row">
                     <div class="col-lg-4 col-md-6 col-sm-6 col-12">
                         <div class="product-wrap mb-50">
                             <div class="product-img default-overlay mb-25">
                                 <a href="product-details.html">
-                                    <img class="default-img" src="assets/images/product/product-4.jpg" alt="">
-                                    <img class="hover-img" src="assets/images/product/product-4-2.jpg" alt="">
+                                    <?= Html::img('@web/images/product/product-14.jpg',['class' => 'default-img'])?>
+                                    <?= Html::img('@web/images/product/product-14-2.jpg',['class' => 'hover-img'])?>
                                 </a>
                                 <div class="product-action product-action-position-1">
                                     <a data-bs-toggle="modal" data-bs-target="#exampleModal" href="#"><i class="fa fa-eye"></i><span>Quick Shop</span></a>
@@ -498,8 +471,8 @@ use yii\helpers\Html;
                         <div class="product-wrap mb-50">
                             <div class="product-img default-overlay mb-25">
                                 <a href="product-details.html">
-                                    <img class="default-img" src="assets/images/product/product-3.jpg" alt="">
-                                    <img class="hover-img" src="assets/images/product/product-3-2.jpg" alt="">
+                                    <?= Html::img('@web/images/product/product-2.jpg',['class' => 'default-img'])?>
+                                    <?= Html::img('@web/images/product/product-2-2.jpg',['class' => 'hover-img'])?>
                                 </a>
                                 <div class="product-action product-action-position-1">
                                     <a data-bs-toggle="modal" data-bs-target="#exampleModal" href="#"><i class="fa fa-eye"></i><span>Quick Shop</span></a>
@@ -520,8 +493,8 @@ use yii\helpers\Html;
                         <div class="product-wrap mb-50">
                             <div class="product-img default-overlay mb-25">
                                 <a href="product-details.html">
-                                    <img class="default-img" src="assets/images/product/product-2.jpg" alt="">
-                                    <img class="hover-img" src="assets/images/product/product-2-2.jpg" alt="">
+                                    <?= Html::img('@web/images/product/product-11.jpg',['class' => 'default-img'])?>
+                                    <?= Html::img('@web/images/product/product-11-2.jpg',['class' => 'hover-img'])?>
                                 </a>
                                 <div class="product-action product-action-position-1">
                                     <a data-bs-toggle="modal" data-bs-target="#exampleModal" href="#"><i class="fa fa-eye"></i><span>Quick Shop</span></a>
@@ -542,8 +515,8 @@ use yii\helpers\Html;
                         <div class="product-wrap mb-50">
                             <div class="product-img default-overlay mb-25">
                                 <a href="product-details.html">
-                                    <img class="default-img" src="assets/images/product/product-1.jpg" alt="">
-                                    <img class="hover-img" src="assets/images/product/product-1-2.jpg" alt="">
+                                    <?= Html::img('@web/images/product/product-10.jpg',['class' => 'default-img'])?>
+                                    <?= Html::img('@web/images/product/product-10-2.jpg',['class' => 'hover-img'])?>
                                     <span class="badge-black badge-left-20 badge-top-20 badge-width-height-2 badge-border-radius-100">7.7%</span>
                                 </a>
                                 <div class="product-action product-action-position-1">
@@ -566,8 +539,8 @@ use yii\helpers\Html;
                         <div class="product-wrap mb-50">
                             <div class="product-img default-overlay mb-25">
                                 <a href="product-details.html">
-                                    <img class="default-img" src="assets/images/product/product-9.jpg" alt="">
-                                    <img class="hover-img" src="assets/images/product/product-9-2.jpg" alt="">
+                                    <?= Html::img('@web/images/product/product-8.jpg',['class' => 'default-img'])?>
+                                    <?= Html::img('@web/images/product/product-8-2.jpg',['class' => 'hover-img'])?>
                                 </a>
                                 <div class="product-action product-action-position-1">
                                     <a data-bs-toggle="modal" data-bs-target="#exampleModal" href="#"><i class="fa fa-eye"></i><span>Quick Shop</span></a>
@@ -588,8 +561,8 @@ use yii\helpers\Html;
                         <div class="product-wrap mb-50">
                             <div class="product-img default-overlay mb-25">
                                 <a href="product-details.html">
-                                    <img class="default-img" src="assets/images/product/product-10.jpg" alt="">
-                                    <img class="hover-img" src="assets/images/product/product-10-2.jpg" alt="">
+                                    <?= Html::img('@web/images/product/product-7.jpg',['class' => 'default-img'])?>
+                                    <?= Html::img('@web/images/product/product-7-2.jpg',['class' => 'hover-img'])?>
                                 </a>
                                 <div class="product-action product-action-position-1">
                                     <a data-bs-toggle="modal" data-bs-target="#exampleModal" href="#"><i class="fa fa-eye"></i><span>Quick Shop</span></a>
@@ -607,25 +580,16 @@ use yii\helpers\Html;
                         </div>
                     </div>
                 </div>
-                <div class="btn-style-1 text-center">
-                    <a class="btn-border" href="shop-fullwide.html">
-                        <div class="btn-viewmore-normal btn-ptb-1 btn-viewmore-bg-transparent btn-viewmore-common">
-                            <span>View all products</span>
-                        </div>
-                        <div class="btn-viewmore-hover btn-ptb-1 btn-viewmore-common btn-hover-transition">
-                            <span>View all products</span>
-                        </div>
-                    </a>
-                </div>
             </div>
-            <div id="product-5" class="tab-pane">
+
+            <div id="product-5" class="tab-pane active">
                 <div class="row">
                     <div class="col-lg-4 col-md-6 col-sm-6 col-12">
                         <div class="product-wrap mb-50">
                             <div class="product-img default-overlay mb-25">
                                 <a href="product-details.html">
-                                    <img class="default-img" src="assets/images/product/product-15.jpg" alt="">
-                                    <img class="hover-img" src="assets/images/product/product-15-2.jpg" alt="">
+                                    <?= Html::img('@web/images/product/product-14.jpg',['class' => 'default-img'])?>
+                                    <?= Html::img('@web/images/product/product-14-2.jpg',['class' => 'hover-img'])?>
                                 </a>
                                 <div class="product-action product-action-position-1">
                                     <a data-bs-toggle="modal" data-bs-target="#exampleModal" href="#"><i class="fa fa-eye"></i><span>Quick Shop</span></a>
@@ -646,8 +610,8 @@ use yii\helpers\Html;
                         <div class="product-wrap mb-50">
                             <div class="product-img default-overlay mb-25">
                                 <a href="product-details.html">
-                                    <img class="default-img" src="assets/images/product/product-10.jpg" alt="">
-                                    <img class="hover-img" src="assets/images/product/product-10-2.jpg" alt="">
+                                    <?= Html::img('@web/images/product/product-2.jpg',['class' => 'default-img'])?>
+                                    <?= Html::img('@web/images/product/product-2-2.jpg',['class' => 'hover-img'])?>
                                 </a>
                                 <div class="product-action product-action-position-1">
                                     <a data-bs-toggle="modal" data-bs-target="#exampleModal" href="#"><i class="fa fa-eye"></i><span>Quick Shop</span></a>
@@ -668,8 +632,8 @@ use yii\helpers\Html;
                         <div class="product-wrap mb-50">
                             <div class="product-img default-overlay mb-25">
                                 <a href="product-details.html">
-                                    <img class="default-img" src="assets/images/product/product-13.jpg" alt="">
-                                    <img class="hover-img" src="assets/images/product/product-13-2.jpg" alt="">
+                                    <?= Html::img('@web/images/product/product-11.jpg',['class' => 'default-img'])?>
+                                    <?= Html::img('@web/images/product/product-11-2.jpg',['class' => 'hover-img'])?>
                                 </a>
                                 <div class="product-action product-action-position-1">
                                     <a data-bs-toggle="modal" data-bs-target="#exampleModal" href="#"><i class="fa fa-eye"></i><span>Quick Shop</span></a>
@@ -690,8 +654,8 @@ use yii\helpers\Html;
                         <div class="product-wrap mb-50">
                             <div class="product-img default-overlay mb-25">
                                 <a href="product-details.html">
-                                    <img class="default-img" src="assets/images/product/product-14.jpg" alt="">
-                                    <img class="hover-img" src="assets/images/product/product-14-2.jpg" alt="">
+                                    <?= Html::img('@web/images/product/product-10.jpg',['class' => 'default-img'])?>
+                                    <?= Html::img('@web/images/product/product-10-2.jpg',['class' => 'hover-img'])?>
                                     <span class="badge-black badge-left-20 badge-top-20 badge-width-height-2 badge-border-radius-100">7.7%</span>
                                 </a>
                                 <div class="product-action product-action-position-1">
@@ -714,8 +678,8 @@ use yii\helpers\Html;
                         <div class="product-wrap mb-50">
                             <div class="product-img default-overlay mb-25">
                                 <a href="product-details.html">
-                                    <img class="default-img" src="assets/images/product/product-15.jpg" alt="">
-                                    <img class="hover-img" src="assets/images/product/product-15-2.jpg" alt="">
+                                    <?= Html::img('@web/images/product/product-8.jpg',['class' => 'default-img'])?>
+                                    <?= Html::img('@web/images/product/product-8-2.jpg',['class' => 'hover-img'])?>
                                 </a>
                                 <div class="product-action product-action-position-1">
                                     <a data-bs-toggle="modal" data-bs-target="#exampleModal" href="#"><i class="fa fa-eye"></i><span>Quick Shop</span></a>
@@ -736,8 +700,8 @@ use yii\helpers\Html;
                         <div class="product-wrap mb-50">
                             <div class="product-img default-overlay mb-25">
                                 <a href="product-details.html">
-                                    <img class="default-img" src="assets/images/product/product-16.jpg" alt="">
-                                    <img class="hover-img" src="assets/images/product/product-16-2.jpg" alt="">
+                                    <?= Html::img('@web/images/product/product-7.jpg',['class' => 'default-img'])?>
+                                    <?= Html::img('@web/images/product/product-7-2.jpg',['class' => 'hover-img'])?>
                                 </a>
                                 <div class="product-action product-action-position-1">
                                     <a data-bs-toggle="modal" data-bs-target="#exampleModal" href="#"><i class="fa fa-eye"></i><span>Quick Shop</span></a>
@@ -755,17 +719,8 @@ use yii\helpers\Html;
                         </div>
                     </div>
                 </div>
-                <div class="btn-style-1 text-center">
-                    <a class="btn-border" href="shop-fullwide.html">
-                        <div class="btn-viewmore-normal btn-ptb-1 btn-viewmore-bg-transparent btn-viewmore-common">
-                            <span>View all products</span>
-                        </div>
-                        <div class="btn-viewmore-hover btn-ptb-1 btn-viewmore-common btn-hover-transition">
-                            <span>View all products</span>
-                        </div>
-                    </a>
-                </div>
             </div>
+
         </div>
     </div>
 </div>

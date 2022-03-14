@@ -20,7 +20,7 @@ use yii\helpers\Html;
                     </div>
                 </div>
             </div>
-            <div class="single-main-slider slider-animated-1 bg-img slider-height-hm3 align-items-center custom-d-flex" data-dot="02" style="background-image:url(../../../web/images/slider/slider-hm3-2.jpg);">
+            <div class="single-main-slider slider-animated-1 bg-img slider-height-hm3 align-items-center custom-d-flex" data-dot="02" style="background-image:url(frontend/web/images/slider/slider-hm3-2.jpg);">
                 <div class="row g-0 width-100-percent">
                     <div class="col-lg-12 col-md-12">
                         <div class="main-slider-content-3-2 text-center">
