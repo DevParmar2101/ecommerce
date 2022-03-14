@@ -10,7 +10,6 @@ use yii\helpers\Html;
                 <div class="categories-img">
                     <a href="#">
                         <?= Html::img('@web/images/categories/categories-4.jpg')?>
-<!--                        <img src="assets/images/categories/categories-4.jpg" alt="categories">-->
                     </a>
                 </div>
                 <span>Headphone</span>
@@ -19,7 +18,6 @@ use yii\helpers\Html;
                 <div class="categories-img">
                     <a href="#">
                         <?= Html::img('@web/images/categories/categories-5.jpg')?>
-<!--                        <img src="assets/images/categories/categories-5.jpg" alt="categories">-->
                     </a>
                 </div>
                 <span>IMac</span>
@@ -28,7 +26,6 @@ use yii\helpers\Html;
                 <div class="categories-img">
                     <a href="#">
                         <?= Html::img('@web/images/categories/categories-6.jpg')?>
-<!--                        <img src="assets/images/categories/categories-6.jpg" alt="categories">-->
                     </a>
                 </div>
                 <span>Ipad Pro</span>
@@ -37,7 +34,6 @@ use yii\helpers\Html;
                 <div class="categories-img">
                     <a href="#">
                         <?= Html::img('@web/images/categories/categories-7.jpg')?>
-<!--                        <img src="assets/images/categories/categories-7.jpg" alt="categories">-->
                     </a>
                 </div>
                 <span>Storage Device</span>
@@ -46,7 +42,6 @@ use yii\helpers\Html;
                 <div class="categories-img">
                     <a href="#">
                         <?= Html::img('@web/images/categories/categories-8.jpg')?>
-<!--                        <img src="assets/images/categories/categories-8.jpg" alt="categories">-->
                     </a>
                 </div>
                 <span>Apple Laptop</span>
@@ -55,7 +50,6 @@ use yii\helpers\Html;
                 <div class="categories-img">
                     <a href="#">
                         <?= Html::img('@web/images/categories/categories-9.jpg')?>
-<!--                        <img src="assets/images/categories/categories-9.jpg" alt="categories">-->
                     </a>
                 </div>
                 <span>Home Audio</span>
@@ -64,7 +58,6 @@ use yii\helpers\Html;
                 <div class="categories-img">
                     <a href="#">
                         <?= Html::img('@web/images/categories/categories-10.jpg')?>
-<!--                        <img src="assets/images/categories/categories-10.jpg" alt="categories">-->
                     </a>
                 </div>
                 <span>Camera & Photo</span>
@@ -73,7 +66,6 @@ use yii\helpers\Html;
                 <div class="categories-img">
                     <a href="#">
                         <?= Html::img('@web/images/categories/categories-11.jpg')?>
-<!--                        <img src="assets/images/categories/categories-11.jpg" alt="categories">-->
                     </a>
                 </div>
                 <span>Accessories</span>
@@ -82,7 +74,6 @@ use yii\helpers\Html;
                 <div class="categories-img">
                     <a href="#">
                         <?= Html::img('@web/images/categories/categories-7.jpg')?>
-<!--                        <img src="assets/images/categories/categories-7.jpg" alt="categories">-->
                     </a>
                 </div>
                 <span>Storage Device</span>
@@ -91,7 +82,6 @@ use yii\helpers\Html;
                 <div class="categories-img">
                     <a href="#">
                         <?= Html::img('@web/images/categories/categories-8.jpg')?>
-<!--                        <img src="assets/images/categories/categories-8.jpg" alt="categories">-->
                     </a>
                 </div>
                 <span>Apple Laptop</span>
