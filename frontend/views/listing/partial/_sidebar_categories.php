@@ -59,36 +59,6 @@ use yii\helpers\Html;
                 </ul>
             </div>
         </div>
-        <div class="sidebar-widget mb-60">
-            <h4 class="pro-sidebar-title">Tags</h4>
-            <div class="sidebar-widget-tag mt-45">
-                <ul>
-                    <li><a href="#">Blazer,</a></li>
-                    <li><a href="#">chair,</a></li>
-                    <li><a href="#">Coat,</a></li>
-                    <li><a href="#">dress,</a></li>
-                    <li><a href="#">Electronics & Tech,</a></li>
-                    <li><a href="#">fashion,</a></li>
-                    <li><a href="#">light,</a></li>
-                    <li><a href="#">Living,</a></li>
-                    <li><a href="#">Main 01,</a></li>
-                    <li><a href="#">Main 02,</a></li>
-                    <li><a href="#">Main 02-1,</a></li>
-                    <li><a href="#">Main 03,</a></li>
-                    <li><a href="#">Sandals,</a></li>
-                    <li><a href="#">Tuxedo</a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="sidebar-widget">
-            <div class="shop-sidebar-banner default-overlay">
-                <a href="#"><img alt="" src="assets/images/banner/sidebar-banner.jpg"></a>
-                <div class="shop-sidebar-content">
-                    <h5>Houndstooth coat</h5>
-                    <h3>off 25%</h3>
-                </div>
-            </div>
-        </div>
     </div>
 </div>
 
