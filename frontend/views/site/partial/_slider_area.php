@@ -6,6 +6,7 @@ use yii\helpers\Html;
 <div class="slider-area">
     <div class="container-fluid p-0">
         <div class="main-slider-active owl-carousel slider-dot-position-2 slider-dot-style-1 slider-img-width-hm3">
+
             <div class="single-main-slider slider-animated-1 bg-img slider-height-hm3 align-items-center custom-d-flex res-white-overly-xs" data-dot="01" style="background-image:url(frontend/web/images/slider/slider-hm3-1.jpg);">
                 <div class="row g-0 width-100-percent">
                     <div class="col-lg-6 col-md-8">
@@ -20,6 +21,7 @@ use yii\helpers\Html;
                     </div>
                 </div>
             </div>
+
             <div class="single-main-slider slider-animated-1 bg-img slider-height-hm3 align-items-center custom-d-flex" data-dot="02" style="background-image:url(frontend/web/images/slider/slider-hm3-2.jpg);">
                 <div class="row g-0 width-100-percent">
                     <div class="col-lg-12 col-md-12">
@@ -33,6 +35,7 @@ use yii\helpers\Html;
                     </div>
                 </div>
             </div>
+
             <div class="single-main-slider slider-animated-1 bg-img slider-height-hm3 align-items-center custom-d-flex " data-dot="03" style="background-image:url(frontend/web/images/slider/slider-hm3-3.jpg);">
                 <div class="row g-0 width-100-percent">
                     <div class="col-lg-6 col-md-12 ms-auto">
@@ -47,12 +50,5 @@ use yii\helpers\Html;
                 </div>
             </div>
         </div>
-    </div>
-    <div class="slider-social">
-        <ul>
-            <li><a href="#">DRIBBLE</a></li>
-            <li><a href="#">Facebook</a></li>
-            <li><a href="#">TWITTER</a></li>
-        </ul>
     </div>
 </div>

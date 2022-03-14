@@ -9,9 +9,8 @@ use yii\helpers\Html;
             <div class="row">
                 <div class="footer-column footer-width-26 footer-logo-center">
                     <div class="footer-widget footer-logo mb-30">
-                        <a href="index.html">
-                            <?= Html::img('@web/images/logo/logo-white.png')?>
-<!--                            <img src="assets/images/logo/logo-white.png" alt="logo">-->
+                        <a href="#" class="logo-text">
+                            CAR RENTAL
                         </a>
                     </div>
                 </div>
@@ -67,14 +66,13 @@ use yii\helpers\Html;
                 </div>
                 <div class="col-lg-4 col-md-4 col-12">
                     <div class="copyright res-mrg-xs text-center">
-                        <p>© 2021 <a href="https://hasthemes.com/">Toro.</a> All rights reserved</p>
+                        <p>© 2021 <a href="https://hasthemes.com/">Car Rental.</a> All rights reserved</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-4 col-12">
                     <div class="footer-payment">
                         <a href="#">
                             <?= Html::img('@web/images/icon-img/paypal.png')?>
-<!--                            <img src="assets/images/icon-img/paypal.png" alt="payment">-->
                         </a>
                     </div>
                 </div>

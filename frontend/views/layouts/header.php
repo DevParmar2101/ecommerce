@@ -2,146 +2,39 @@
 
 use yii\helpers\Html;
 ?>
-<header class="header-area section-padding-1 bg-black-2">
-    <div class="header-bottom">
+<header class="header-area transparent-bar section-padding-1 bg-black-2">
+    <div class="header-bottom background-rgb-1">
         <div class="container-fluid">
             <div class="row align-items-center">
-                <div class="col-xl-5 col-lg-7 position-static">
-                    <div class="main-menu menu-lh-1 main-menu-white menu-fw-400 main-menu-padding-2">
-                        <nav>
-                            <ul>
-                                <li class="position-static"><a class="active" href="index.html">Home <i class="fa fa-angle-down"></i></a>
-                                </li>
-                                <li><a href="#">Pages <i class="fa fa-angle-down"></i></a>
-                                    <ul class="sub-menu-width">
-                                        <li><a href="about-us.html">About Us</a></li>
-                                        <li><a href="contact-us.html">Contact Page</a></li>
-                                        <li><a href="404.html">404 Page</a></li>
-                                        <li><a href="comming-soon.html">Comming Soon 01</a></li>
-                                        <li><a href="comming-soon-2.html">Comming Soon 02</a></li>
-                                        <li><a href="faq.html">FAQ</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="shop-fullwide.html">Shop <i class="fa fa-angle-down"></i></a>
-                                    <ul class="mega-menu-style-2 mega-menu-width2 menu-negative-mrg2">
-                                        <li class="mega-menu-sub-width20"><a class="menu-title" href="#">Shop Layout</a>
-                                            <ul>
-                                                <li><a href="shop-fullwide.html">Shop Fullwidth</a></li>
-                                                <li><a href="shop-sidebar.html">Shop Sidebar</a></li>
-                                                <li><a href="shop-metro.html">Shop Metro Layout</a></li>
-                                                <li><a href="shop-3-col.html">Shop 03 Columns</a></li>
-                                                <li><a href="shop-2-col.html">Shop 02 Columns</a></li>
-                                                <li><a href="shop-collection-1.html">Shop Collection 01</a></li>
-                                                <li><a href="shop-collection-2.html">Shop Collection 02</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="mega-menu-sub-width22"><a class="menu-title" href="#">Product Layout</a>
-                                            <ul>
-                                                <li><a href="product-details.html">Single 01</a></li>
-                                                <li><a href="product-details-2.html">Single 02</a></li>
-                                                <li><a href="product-details-group.html">Grouped</a></li>
-                                                <li><a href="product-details-sticky.html">Sticky Info</a></li>
-                                                <li><a href="product-details-configurable.html">Configurable</a></li>
-                                                <li><a href="product-details-thumbnail.html">Thumbnail</a></li>
-                                                <li><a href="product-details-video.html">Video</a></li>
-                                                <li><a href="product-details-affiliate.html">Affiliate</a></li>
-                                                <li><a href="product-details-sidebar.html">Sidebar</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="mega-menu-sub-width20"><a class="menu-title" href="#">Shop Pages</a>
-                                            <ul>
-                                                <li><a href="my-account.html">My Account</a></li>
-                                                <li><a href="checkout.html">Check Out</a></li>
-                                                <li><a href="cart.html">Shopping Cart</a></li>
-                                                <li><a href="wishlist.html">Wishlist</a></li>
-                                                <li><a href="order-tracking.html">Order Tracking</a></li>
-                                                <li><a href="compare.html">Compare</a></li>
-                                                <li><a href="login-register.html">login / register</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="mega-menu-sub-width37">
-                                            <div class="banner-menu-content-wrap default-overlay">
-                                                <a href="product-details.html">
-                                                    <?= Html::img('@web/images/menu/banner-header.jpg')?>
-                                                </a>
-                                                <div class="banner-menu-content">
-                                                    <h2>Bikini <br>Collections</h2>
-                                                </div>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li><a href="shop-collection-1.html">Collections <i class="fa fa-angle-down"></i> </a>
-                                    <ul class="sub-menu-width">
-                                        <li><a href="shop-collection-1.html">Shop Collection 01</a></li>
-                                        <li><a href="shop-collection-2.html">Shop Collection 02</a></li>
-                                        <li><a href="shop-metro.html">Shop Metro Layout</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="blog.html">Blog <i class="fa fa-angle-down"></i></a>
-                                    <ul class="sub-menu-width">
-                                        <li><a href="blog.html">Blog Style 01</a></li>
-                                        <li><a href="blog-2.html">Blog Style 02</a></li>
-                                        <li><a href="blog-3.html">Blog Style 03</a></li>
-                                        <li><a href="#">Single Posts <i class="fa fa-angle-right"></i></a>
-                                            <ul class="lavel-menu">
-                                                <li><a href="blog-details.html">Single Post Style 01</a></li>
-                                                <li><a href="blog-details-2.html">Single Post Style 02</a></li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li><a href="shop-instagram.html">Instagram Shop </a></li>
-                            </ul>
-                        </nav>
-                    </div>
-                </div>
                 <div class="col-xl-2 col-lg-2">
-                    <div class="logo logo-width ml-20">
-                        <a href="index.html">
-                            <?= Html::img('@web/images/logo/logo-white.png')?>
+                    <div class="logo logo-width">
+                        <a href="#" class="logo-text">
+                            CAR RENTAL
                         </a>
                     </div>
                 </div>
-                <div class="col-xl-5 col-lg-3">
-                    <div class="header-right-wrap header-right-flex header-right-hm3">
-                        <div class="same-style same-style-white header-contact same-style-font-inc">
-                            <span><i class="dlicon ui-1_email-83"></i>support@la-studioweb.com</span>
-                        </div>
-                        <div class="same-style same-style-white header-contact same-style-font-inc">
-                            <span><i class="dlicon ui-3_phone-call"></i>(55) 854.584.85</span>
-                        </div>
-                        <div class="same-style same-style-white header-wishlist same-style-font-inc">
-                            <a href="wishlist.html"><i class="fa fa-heart-o"></i></a>
-                        </div>
-                        <div class="same-style same-style-white cart-wrap same-style-font-inc">
-                            <a href="#" class="cart-active">
-                                <i class="dlicon shopping_bag-20"></i>
-                                <span class="count-style">02</span>
-                            </a>
-                        </div>
-                        <div class="same-style same-style-white header-search same-style-font-inc">
-                            <a class="search-active" href="#">
-                                <i class="dlicon ui-1_zoom"></i>
-                            </a>
-                        </div>
-                        <div class="same-style same-style-white header-off-canvas same-style-font-inc">
-                            <a class="header-aside-button" href="#">
-                                <i class="dlicon ui-3_menu-left"></i>
-                            </a>
-                        </div>
+                <div class="col-xl-8 col-lg-8 d-flex justify-content-end position-static">
+                    <div class="main-menu menu-lh-1 main-menu-white main-menu-padding-1 menu-fw-400">
+                        <nav>
+                            <ul>
+                                <li class="position-static"><a class="active" href="#">Home </a></li>
+                                <li><a href="#">Pages</a></li></li>
+                                <li><a href="#">Blog</a></li>
+                            </ul>
+                        </nav>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </header>
+
 <div class="header-small-mobile section-padding-1">
     <div class="container-fluid">
         <div class="row align-items-center">
             <div class="col-6">
                 <div class="mobile-logo logo-width">
-                    <a href="index.html">
+                    <a href="#">
                         <?= Html::img('@web/images/logo/logo.png')?>
                     </a>
                 </div>
