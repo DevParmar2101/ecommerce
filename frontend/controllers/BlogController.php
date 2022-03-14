@@ -21,4 +21,8 @@ class BlogController extends Controller
         return $this->render('index');
     }
 
+    public function actionBlogInner()
+    {
+        return $this->render('blog-inner');
+    }
 }

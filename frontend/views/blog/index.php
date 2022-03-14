@@ -1,6 +1,8 @@
 <?php
 
 use yii\helpers\Html;
+
+$this->title = 'Blog Index';
 ?>
 <!-- Breadcrumb is Start -->
 <?= $this->render('partial/_breadcrumb')?>
