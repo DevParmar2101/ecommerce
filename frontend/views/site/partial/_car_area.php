@@ -3,7 +3,7 @@
 use yii\helpers\Html;
 ?>
 
-<div class="product-area pt-130 pb-120 section-padding-3">
+<div class="product-area section-padding-6 pb-45">
     <div class="container-fluid">
         <div class="section-title-2 mb-45 text-center">
             <h2>New arrival</h2>
@@ -28,29 +28,7 @@ use yii\helpers\Html;
         <div class="tab-content jump padding-60-row-col">
             <div id="product-1" class="tab-pane active">
                 <div class="row">
-                    <div class="col-lg-4 col-md-6 col-sm-6 col-12">
-                        <div class="product-wrap mb-50">
-                            <div class="product-img default-overlay mb-25">
-                                <a href="product-details.html">
-                                    <?= Html::img('@web/images/product/product-14.jpg',['class' => 'default-img'])?>
-                                    <?= Html::img('@web/images/product/product-14-2.jpg',['class' => 'hover-img'])?>
-                                </a>
-                                <div class="product-action product-action-position-1">
-                                    <a data-bs-toggle="modal" data-bs-target="#exampleModal" href="#"><i class="fa fa-eye"></i><span>Quick Shop</span></a>
-                                    <a title="Add to Wishlist" href="#"><i class="fa fa-heart"></i><span>Add to Wishlist</span></a>
-                                    <a class="icon-blod" title="Add to Compare" href="#"><i class="dlicon arrows-4_compare"></i><span>Add to Compare</span></a>
-                                    <a title="Add to Cart" href="#"><i class="fa fa-shopping-cart"></i><span>Add to Cart</span></a>
-                                </div>
-                            </div>
-                            <div class="product-content-2 title-font-width-400 text-center">
-                                <h3><a href="product-details.html">Fashion sneaker winter</a></h3>
-                                <div class="product-price">
-                                    <span class="new-price">$28.00</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+                    <div class="custom-col-5">
                         <div class="product-wrap mb-50">
                             <div class="product-img default-overlay mb-25">
                                 <a href="product-details.html">
@@ -72,7 +50,7 @@ use yii\helpers\Html;
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+                    <div class="custom-col-5">
                         <div class="product-wrap mb-50">
                             <div class="product-img default-overlay mb-25">
                                 <a href="product-details.html">
@@ -94,7 +72,7 @@ use yii\helpers\Html;
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+                    <div class="custom-col-5">
                         <div class="product-wrap mb-50">
                             <div class="product-img default-overlay mb-25">
                                 <a href="product-details.html">
@@ -118,7 +96,7 @@ use yii\helpers\Html;
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+                    <div class="custom-col-5">
                         <div class="product-wrap mb-50">
                             <div class="product-img default-overlay mb-25">
                                 <a href="product-details.html">
@@ -140,7 +118,7 @@ use yii\helpers\Html;
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+                    <div class="custom-col-5">
                         <div class="product-wrap mb-50">
                             <div class="product-img default-overlay mb-25">
                                 <a href="product-details.html">
@@ -167,29 +145,7 @@ use yii\helpers\Html;
 
             <div id="product-2" class="tab-pane active">
                 <div class="row">
-                    <div class="col-lg-4 col-md-6 col-sm-6 col-12">
-                        <div class="product-wrap mb-50">
-                            <div class="product-img default-overlay mb-25">
-                                <a href="product-details.html">
-                                    <?= Html::img('@web/images/product/product-14.jpg',['class' => 'default-img'])?>
-                                    <?= Html::img('@web/images/product/product-14-2.jpg',['class' => 'hover-img'])?>
-                                </a>
-                                <div class="product-action product-action-position-1">
-                                    <a data-bs-toggle="modal" data-bs-target="#exampleModal" href="#"><i class="fa fa-eye"></i><span>Quick Shop</span></a>
-                                    <a title="Add to Wishlist" href="#"><i class="fa fa-heart"></i><span>Add to Wishlist</span></a>
-                                    <a class="icon-blod" title="Add to Compare" href="#"><i class="dlicon arrows-4_compare"></i><span>Add to Compare</span></a>
-                                    <a title="Add to Cart" href="#"><i class="fa fa-shopping-cart"></i><span>Add to Cart</span></a>
-                                </div>
-                            </div>
-                            <div class="product-content-2 title-font-width-400 text-center">
-                                <h3><a href="product-details.html">Fashion sneaker winter</a></h3>
-                                <div class="product-price">
-                                    <span class="new-price">$28.00</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+                    <div class="custom-col-5">
                         <div class="product-wrap mb-50">
                             <div class="product-img default-overlay mb-25">
                                 <a href="product-details.html">
@@ -211,7 +167,7 @@ use yii\helpers\Html;
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+                    <div class="custom-col-5">
                         <div class="product-wrap mb-50">
                             <div class="product-img default-overlay mb-25">
                                 <a href="product-details.html">
@@ -233,7 +189,7 @@ use yii\helpers\Html;
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+                    <div class="custom-col-5">
                         <div class="product-wrap mb-50">
                             <div class="product-img default-overlay mb-25">
                                 <a href="product-details.html">
@@ -257,7 +213,7 @@ use yii\helpers\Html;
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+                    <div class="custom-col-5">
                         <div class="product-wrap mb-50">
                             <div class="product-img default-overlay mb-25">
                                 <a href="product-details.html">
@@ -279,7 +235,7 @@ use yii\helpers\Html;
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+                    <div class="custom-col-5">
                         <div class="product-wrap mb-50">
                             <div class="product-img default-overlay mb-25">
                                 <a href="product-details.html">
@@ -306,29 +262,7 @@ use yii\helpers\Html;
 
             <div id="product-3" class="tab-pane active">
                 <div class="row">
-                    <div class="col-lg-4 col-md-6 col-sm-6 col-12">
-                        <div class="product-wrap mb-50">
-                            <div class="product-img default-overlay mb-25">
-                                <a href="product-details.html">
-                                    <?= Html::img('@web/images/product/product-14.jpg',['class' => 'default-img'])?>
-                                    <?= Html::img('@web/images/product/product-14-2.jpg',['class' => 'hover-img'])?>
-                                </a>
-                                <div class="product-action product-action-position-1">
-                                    <a data-bs-toggle="modal" data-bs-target="#exampleModal" href="#"><i class="fa fa-eye"></i><span>Quick Shop</span></a>
-                                    <a title="Add to Wishlist" href="#"><i class="fa fa-heart"></i><span>Add to Wishlist</span></a>
-                                    <a class="icon-blod" title="Add to Compare" href="#"><i class="dlicon arrows-4_compare"></i><span>Add to Compare</span></a>
-                                    <a title="Add to Cart" href="#"><i class="fa fa-shopping-cart"></i><span>Add to Cart</span></a>
-                                </div>
-                            </div>
-                            <div class="product-content-2 title-font-width-400 text-center">
-                                <h3><a href="product-details.html">Fashion sneaker winter</a></h3>
-                                <div class="product-price">
-                                    <span class="new-price">$28.00</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+                    <div class="custom-col-5">
                         <div class="product-wrap mb-50">
                             <div class="product-img default-overlay mb-25">
                                 <a href="product-details.html">
@@ -350,7 +284,7 @@ use yii\helpers\Html;
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+                    <div class="custom-col-5">
                         <div class="product-wrap mb-50">
                             <div class="product-img default-overlay mb-25">
                                 <a href="product-details.html">
@@ -372,7 +306,7 @@ use yii\helpers\Html;
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+                    <div class="custom-col-5">
                         <div class="product-wrap mb-50">
                             <div class="product-img default-overlay mb-25">
                                 <a href="product-details.html">
@@ -396,7 +330,7 @@ use yii\helpers\Html;
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+                    <div class="custom-col-5">
                         <div class="product-wrap mb-50">
                             <div class="product-img default-overlay mb-25">
                                 <a href="product-details.html">
@@ -418,7 +352,7 @@ use yii\helpers\Html;
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+                    <div class="custom-col-5">
                         <div class="product-wrap mb-50">
                             <div class="product-img default-overlay mb-25">
                                 <a href="product-details.html">
@@ -445,29 +379,7 @@ use yii\helpers\Html;
 
             <div id="product-4" class="tab-pane active">
                 <div class="row">
-                    <div class="col-lg-4 col-md-6 col-sm-6 col-12">
-                        <div class="product-wrap mb-50">
-                            <div class="product-img default-overlay mb-25">
-                                <a href="product-details.html">
-                                    <?= Html::img('@web/images/product/product-14.jpg',['class' => 'default-img'])?>
-                                    <?= Html::img('@web/images/product/product-14-2.jpg',['class' => 'hover-img'])?>
-                                </a>
-                                <div class="product-action product-action-position-1">
-                                    <a data-bs-toggle="modal" data-bs-target="#exampleModal" href="#"><i class="fa fa-eye"></i><span>Quick Shop</span></a>
-                                    <a title="Add to Wishlist" href="#"><i class="fa fa-heart"></i><span>Add to Wishlist</span></a>
-                                    <a class="icon-blod" title="Add to Compare" href="#"><i class="dlicon arrows-4_compare"></i><span>Add to Compare</span></a>
-                                    <a title="Add to Cart" href="#"><i class="fa fa-shopping-cart"></i><span>Add to Cart</span></a>
-                                </div>
-                            </div>
-                            <div class="product-content-2 title-font-width-400 text-center">
-                                <h3><a href="product-details.html">Fashion sneaker winter</a></h3>
-                                <div class="product-price">
-                                    <span class="new-price">$28.00</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+                    <div class="custom-col-5">
                         <div class="product-wrap mb-50">
                             <div class="product-img default-overlay mb-25">
                                 <a href="product-details.html">
@@ -489,7 +401,7 @@ use yii\helpers\Html;
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+                    <div class="custom-col-5">
                         <div class="product-wrap mb-50">
                             <div class="product-img default-overlay mb-25">
                                 <a href="product-details.html">
@@ -511,7 +423,7 @@ use yii\helpers\Html;
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+                    <div class="custom-col-5">
                         <div class="product-wrap mb-50">
                             <div class="product-img default-overlay mb-25">
                                 <a href="product-details.html">
@@ -535,7 +447,7 @@ use yii\helpers\Html;
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+                    <div class="custom-col-5">
                         <div class="product-wrap mb-50">
                             <div class="product-img default-overlay mb-25">
                                 <a href="product-details.html">
@@ -557,7 +469,7 @@ use yii\helpers\Html;
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+                    <div class="custom-col-5">
                         <div class="product-wrap mb-50">
                             <div class="product-img default-overlay mb-25">
                                 <a href="product-details.html">
@@ -584,7 +496,7 @@ use yii\helpers\Html;
 
             <div id="product-5" class="tab-pane active">
                 <div class="row">
-                    <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+                    <div class="custom-col-5">
                         <div class="product-wrap mb-50">
                             <div class="product-img default-overlay mb-25">
                                 <a href="product-details.html">
@@ -606,7 +518,7 @@ use yii\helpers\Html;
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+                    <div class="custom-col-5">
                         <div class="product-wrap mb-50">
                             <div class="product-img default-overlay mb-25">
                                 <a href="product-details.html">
@@ -628,29 +540,7 @@ use yii\helpers\Html;
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6 col-12">
-                        <div class="product-wrap mb-50">
-                            <div class="product-img default-overlay mb-25">
-                                <a href="product-details.html">
-                                    <?= Html::img('@web/images/product/product-11.jpg',['class' => 'default-img'])?>
-                                    <?= Html::img('@web/images/product/product-11-2.jpg',['class' => 'hover-img'])?>
-                                </a>
-                                <div class="product-action product-action-position-1">
-                                    <a data-bs-toggle="modal" data-bs-target="#exampleModal" href="#"><i class="fa fa-eye"></i><span>Quick Shop</span></a>
-                                    <a title="Add to Wishlist" href="#"><i class="fa fa-heart"></i><span>Add to Wishlist</span></a>
-                                    <a class="icon-blod" title="Add to Compare" href="#"><i class="dlicon arrows-4_compare"></i><span>Add to Compare</span></a>
-                                    <a title="Add to Cart" href="#"><i class="fa fa-shopping-cart"></i><span>Add to Cart</span></a>
-                                </div>
-                            </div>
-                            <div class="product-content-2 title-font-width-400 text-center">
-                                <h3><a href="product-details.html">Check bermuda shorts</a></h3>
-                                <div class="product-price">
-                                    <span class="new-price">$39.00</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+                    <div class="custom-col-5">
                         <div class="product-wrap mb-50">
                             <div class="product-img default-overlay mb-25">
                                 <a href="product-details.html">
@@ -674,7 +564,7 @@ use yii\helpers\Html;
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+                    <div class="custom-col-5">
                         <div class="product-wrap mb-50">
                             <div class="product-img default-overlay mb-25">
                                 <a href="product-details.html">
@@ -696,7 +586,7 @@ use yii\helpers\Html;
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+                    <div class="custom-col-5">
                         <div class="product-wrap mb-50">
                             <div class="product-img default-overlay mb-25">
                                 <a href="product-details.html">
