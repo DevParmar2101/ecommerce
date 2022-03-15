@@ -770,23 +770,6 @@
         }
     })
     
-    /*--
-    instafeed
-    -----------------------------------*/
-    // User Changeable Access
-    var activeId = $("#instafeed"),
-    limit = activeId.data("limit"),
-        myTemplate = '<div class="single-instafeed"><a href="{{link}}" target="_blank" id="{{id}}"><img src="{{image}}" /></a></div>';
-    if (activeId.length) {
-        var accessTokenID = "IGQVJWLXU1Ri1JbjE0RlhlRmVZAMy1mRllxUzJWZAG5najYxWUxLcGl1SV80UHNiN2ZAaUFdHTVllMEh6YjRucTZAIY09TQlowdGlScG9taHhWNHJwaXQzOVZAwUDdsZAHdqTjhTcHB5ZA2I5QWRVZAVZAtYjZA2SgZDZD",
-            userFeed = new Instafeed({
-                accessToken: accessTokenID,
-                template: myTemplate,
-                limit: limit,
-            });
-        userFeed.run();
-    }
-    
     /* Notification */
     $('.notification-close button').on('click', function() {
         $('.notification-section').slideUp();
