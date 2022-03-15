@@ -37,7 +37,7 @@ class AppAsset extends AssetBundle
         'js/plugins/jarallax.min.js',
         'js/plugins/countdown.js',
         'js/plugins/magnific-popup.js',
-        'js/plugins/instafeed.js',
+//        'js/plugins/instafeed.js',
         'js/plugins/tilt.js',
         'js/plugins/images-loaded.js',
         'js/plugins/isotope.js',
