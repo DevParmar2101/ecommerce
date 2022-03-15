@@ -16,4 +16,9 @@ class ListingController extends Controller
     {
         return $this->render('index');
     }
+
+    public function actionListingDetail()
+    {
+        return $this->render('listing-detail');
+    }
 }
