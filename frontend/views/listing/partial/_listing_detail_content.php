@@ -11,60 +11,79 @@ use yii\helpers\Html;
                     <div class="pro-dec-big-img-slider">
                         <div class="easyzoom-style">
                             <div class="easyzoom easyzoom--overlay">
-                                <a href="assets/images/product-details/b-large-1.jpg">
-                                    <img src="assets/images/product-details/large-1.jpg" alt="">
+                                <a href="<?= Yii::getAlias('@web/images/product-details/b-large-1.jpg')?>">
+                                    <?= Html::img('@web/images/product-details/large-1.jpg')?>
+<!--                                    <img src="assets/images/product-details/large-1.jpg" alt="">-->
                                 </a>
                             </div>
-                            <a class="easyzoom-pop-up img-popup" href="assets/images/product-details/b-large-1.jpg"><i class="dlicon ui-1_zoom-in "></i></a>
+                            <a class="easyzoom-pop-up img-popup" href="<?= Yii::getAlias('@web/images/product-details/b-large-1.jpg')?>">
+                                <i class="dlicon ui-1_zoom-in "></i>
+                            </a>
                         </div>
                         <div class="easyzoom-style">
                             <div class="easyzoom easyzoom--overlay">
-                                <a href="assets/images/product-details/b-large-2.jpg">
-                                    <img src="assets/images/product-details/large-2.jpg" alt="">
+                                <a href="<?= Yii::getAlias('@web/images/product-details/b-large-2.jpg')?>">
+                                    <?= Html::img('@web/images/product-details/large-2.jpg')?>
+<!--                                    <img src="assets/images/product-details/large-2.jpg" alt="">-->
                                 </a>
                             </div>
-                            <a class="easyzoom-pop-up img-popup" href="assets/images/product-details/b-large-2.jpg"><i class="dlicon ui-1_zoom-in "></i></a>
+                            <a class="easyzoom-pop-up img-popup" href="<?= Yii::getAlias('@web/images/product-details/b-large-2.jpg')?>">
+                                <i class="dlicon ui-1_zoom-in "></i>
+                            </a>
                         </div>
                         <div class="easyzoom-style">
                             <div class="easyzoom easyzoom--overlay">
-                                <a href="assets/images/product-details/b-large-3.jpg">
-                                    <img src="assets/images/product-details/large-3.jpg" alt="">
+                                <a href="<?= Yii::getAlias('@web/images/product-details/b-large-3.jpg')?>">
+                                    <?= Html::img('@web/images/product-details/large-3.jpg')?>
+<!--                                    <img src="assets/images/product-details/large-3.jpg" alt="">-->
                                 </a>
                             </div>
-                            <a class="easyzoom-pop-up img-popup" href="assets/images/product-details/b-large-3.jpg"><i class="dlicon ui-1_zoom-in "></i></a>
+                            <a class="easyzoom-pop-up img-popup" href="<?= Yii::getAlias('@web/images/product-details/b-large-3.jpg')?>">
+                                <i class="dlicon ui-1_zoom-in "></i>
+                            </a>
                         </div>
                         <div class="easyzoom-style">
                             <div class="easyzoom easyzoom--overlay">
-                                <a href="assets/images/product-details/b-large-4.jpg">
-                                    <img src="assets/images/product-details/large-4.jpg" alt="">
+                                <a href="<?= Yii::getAlias('@web/images/product-details/b-large-4.jpg')?>">
+                                    <?= Html::img('@web/images/product-details/large-4.jpg')?>
+<!--                                    <img src="assets/images/product-details/large-4.jpg" alt="">-->
                                 </a>
                             </div>
-                            <a class="easyzoom-pop-up img-popup" href="assets/images/product-details/b-large-4.jpg"><i class="dlicon ui-1_zoom-in "></i></a>
+                            <a class="easyzoom-pop-up img-popup" href="<?= Yii::getAlias('@web/images/product-details/b-large-4.jpg')?>">
+                                <i class="dlicon ui-1_zoom-in "></i>
+                                </a>
                         </div>
                         <div class="easyzoom-style">
                             <div class="easyzoom easyzoom--overlay">
-                                <a href="assets/images/product-details/b-large-2.jpg">
-                                    <img src="assets/images/product-details/large-2.jpg" alt="">
+                                <a href="<?= Yii::getAlias('@web/images/product-details/b-large-2.jpg')?>">
+                                    <?= Html::img('@web/images/product-details/large-2.jpg')?>
+<!--                                    <img src="assets/images/product-details/large-2.jpg" alt="">-->
                                 </a>
                             </div>
-                            <a class="easyzoom-pop-up img-popup" href="assets/images/product-details/b-large-2.jpg"><i class="dlicon ui-1_zoom-in "></i></a>
+                            <a class="easyzoom-pop-up img-popup" href="<?= Yii::getAlias('@web/images/product-details/b-large-2.jpg')?>">
+                                <i class="dlicon ui-1_zoom-in "></i>
+                            </a>
                         </div>
                     </div>
                     <div class="product-dec-slider-2 product-dec-small-style2">
                         <div class="product-dec-small active">
-                            <img src="assets/images/product-details/small-1.jpg" alt="">
+                            <?= Html::img('@web/images/product-details/small-1.jpg')?>
+<!--                            <img src="assets/images/product-details/small-1.jpg" alt="">-->
                         </div>
                         <div class="product-dec-small">
-                            <img src="assets/images/product-details/small-2.jpg" alt="">
+                            <?= Html::img('@web/images/product-details/small-2.jpg')?>
+<!--                            <img src="assets/images/product-details/small-2.jpg" alt="">-->
                         </div>
                         <div class="product-dec-small">
-                            <img src="assets/images/product-details/small-3.jpg" alt="">
+                            <?= Html::img('@web/images/product-details/small-3.jpg')?>
+<!--                            <img src="assets/images/product-details/small-3.jpg" alt="">-->
                         </div>
                         <div class="product-dec-small">
-                            <img src="assets/images/product-details/small-4.jpg" alt="">
+                            <?= Html::img('@web/images/product-details/small-4.jpg')?>
+<!--                            <img src="assets/images/product-details/small-4.jpg" alt="">-->
                         </div>
                         <div class="product-dec-small">
-                            <img src="assets/images/product-details/small-2.jpg" alt="">
+                            <?= Html::img('@web/images/product-details/small-2.jpg')?>
                         </div>
                     </div>
                 </div>
@@ -134,14 +153,18 @@ use yii\helpers\Html;
                     <div class="product-details-col-28">
                         <div class="pro-details-sidebar-active slider-nav-style-3 owl-carousel">
                             <div class="single-pro-details-sidebar">
-                                <a href="#"><img src="assets/images/product-details/pro-details-sidebar-1.jpg" alt=""></a>
+                                <a href="#">
+                                    <?= Html::img('@web/images/product-details/pro-details-sidebar-1.jpg')?>
+                                </a>
                                 <div class="pro-details-sidebar-content">
                                     <h4><a href="#">NEW <br>LONDON</a></h4>
                                     <p>Off 20% for all</p>
                                 </div>
                             </div>
                             <div class="single-pro-details-sidebar">
-                                <a href="#"><img src="assets/images/product-details/pro-details-sidebar-2.jpg" alt=""></a>
+                                <a href="#">
+                                    <?= Html::img('@web/images/product-details/pro-details-sidebar-2.jpg')?>
+                                </a>
                                 <div class="pro-details-sidebar-content">
                                     <h4><a href="#">NEW <br>LONDON</a></h4>
                                     <p>Off 20% for all</p>
