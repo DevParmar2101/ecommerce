@@ -3,23 +3,18 @@
 use yii\helpers\Html;
 ?>
 
-<div class="breadcrumb-area border-top-3 section-padding-1 breadcrumb-ptb-3">
+<div class="breadcrumb-area section-padding-1 breadcrumb-bg-1 breadcrumb-ptb-2">
     <div class="container-fluid">
-        <div class="breadcrumb-content breadcrumb-font-inc">
+        <div class="breadcrumb-content text-center">
+            <div class="breadcrumb-title">
+                <h2>Product Details </h2>
+            </div>
             <ul>
                 <li>
-                    <a href="index.html">Home 01 </a>
+                    <a href="index.html">Home </a>
                 </li>
-                <li><span> > </span></li>
-                <li>
-                    <a href="index.html">Shop</a>
-                </li>
-                <li><span> > </span></li>
-                <li>
-                    <a href="index.html">Fashion sale off</a>
-                </li>
-                <li><span> > </span></li>
-                <li class="active"> Sleeve Button Cowl Neck </li>
+                <li><span> &gt; </span></li>
+                <li class="active"> Listing </li>
             </ul>
         </div>
     </div>
