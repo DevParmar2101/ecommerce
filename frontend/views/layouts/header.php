@@ -21,7 +21,10 @@ use yii\helpers\Html;
                                 <li><a href="#">Pages</a></li>
                                 <li><a href="#">Blog</a></li>
                                 <li><a href="<?= \yii\helpers\Url::toRoute('site/faq')?>">Faq</a></li>
-
+                                <?php if (Yii::$app->user->isGuest) {?>
+                                <li><a href="<?= \yii\helpers\Url::toRoute('site/signup')?>">Signup</a></li>
+                                <li><a href="<?= \yii\helpers\Url::toRoute('site/login')?>">Login</a></li>
+                                <?php }?>
                             </ul>
                         </nav>
                     </div>
