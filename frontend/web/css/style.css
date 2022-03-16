@@ -16337,7 +16337,7 @@ body.body-menu-overlay::before {
 }
 
 .bg-1 {
-  background-image: url(../../assets/images/bg/bg-1.png);
+  background-image: url(../frontend/images/bg/bg-1.png);
   background-position: 110% calc(110% + 69.7px);
   position: absolute;
   left: 0;
@@ -20354,14 +20354,14 @@ body.body-menu-overlay::before {
 }
 
 .comming-soon-img {
-  background-image: url("../../assets/images/bg/bg-comming-soon-01.jpg");
+  background-image: url("../frontend/images/bg/bg-comming-soon-01.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .comming-soon2-img {
-  background-image: url("../../assets/images/bg/bg-comming-soon-02.jpg");
+  background-image: url("../frontend/images/bg/bg-comming-soon-02.jpg");
   background-position: center left;
   background-repeat: no-repeat;
   background-size: cover;
@@ -20369,7 +20369,7 @@ body.body-menu-overlay::before {
 }
 
 .comming-soon3-img {
-  background-image: url("../../assets/images/bg/bg-comming-soon-03.png");
+  background-image: url("../frontend/images/bg/bg-comming-soon-03.png");
   background-position: bottom right;
   background-repeat: no-repeat;
   background-size: 400px auto;
@@ -25307,7 +25307,7 @@ body.body-menu-overlay::before {
   font-size: 14px;
   height: 50px;
   padding: 2px 20px;
-  background: rgba(0, 0, 0, 0) url("../../assets/images/icon-img/select.png") no-repeat scroll right 18px center;
+  background: rgba(0, 0, 0, 0) url("../frontend/images/icon-img/select.png") no-repeat scroll right 18px center;
 }
 
 @media only screen and (max-width: 767px) {
@@ -26451,11 +26451,11 @@ body.body-menu-overlay::before {
 }
 
 .breadcrumb-bg-1 {
-  background: #fff url("../../assets/images/bg/breadcrumb-bg-1.jpg") repeat-x center bottom;
+  background: #fff url("../frontend/images/bg/breadcrumb-bg-1.jpg") repeat-x center bottom;
 }
 
 .breadcrumb-bg-2 {
-  background: #FFEBEB url("../../assets/images/bg/breadcrumb-bg-2.png") no-repeat right bottom;
+  background: #FFEBEB url("../frontend/images/bg/breadcrumb-bg-2.png") no-repeat right bottom;
 }
 
 @media only screen and (min-width: 1366px) and (max-width: 1600px) {
@@ -26477,13 +26477,13 @@ body.body-menu-overlay::before {
 }
 
 .breadcrumb-bg-3 {
-  background: url("../../assets/images/bg/breadcrumb-bg-3.jpg");
+  background: url("../frontend/images/bg/breadcrumb-bg-3.jpg");
   background-size: cover;
   background-position: 100% 0%;
 }
 
 .breadcrumb-bg-4 {
-  background: url("../../assets/images/bg/breadcrumb-bg-4.jpg");
+  background: url("../frontend/web/images/bg/breadcrumb-bg-4.jpg");
   background-repeat: repeat;
   background-position: center center;
   background-size: cover;
