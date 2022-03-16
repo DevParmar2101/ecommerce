@@ -40,11 +40,11 @@
 }
 
 .breadcrumb-bg-1 {
-	background: #fff url("../../assets/images/bg/breadcrumb-bg-1.jpg") repeat-x center bottom;
+	background: #fff url("../../web/images/bg/breadcrumb-bg-1.jpg") repeat-x center bottom;
 }
 
 .breadcrumb-bg-2 {
-	background: #FFEBEB url("../../assets/images/bg/breadcrumb-bg-2.png") no-repeat right bottom;
+	background: #FFEBEB url("../../web/images/bg/breadcrumb-bg-2.png") no-repeat right bottom;
     @media #{$xx-layout} {
         background-size: 600px auto;
     }
@@ -56,13 +56,13 @@
     }
 }
 .breadcrumb-bg-3 {
-	background: url("../../assets/images/bg/breadcrumb-bg-3.jpg");
+	background: url("../../web/images/bg/breadcrumb-bg-3.jpg");
     background-size: cover;
     background-position: 100% 0%;
 }
 
 .breadcrumb-bg-4 {
-	background: url("../../assets/images/bg/breadcrumb-bg-4.jpg");
+	background: url("../../web/images/bg/breadcrumb-bg-4.jpg");
     background-repeat: repeat;
     background-position: center center;
     background-size: cover;
