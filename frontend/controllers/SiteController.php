@@ -261,8 +261,9 @@ class SiteController extends Controller
     {
         return $this->render('faq');
     }
-    public function actionTest()
+    public function actionTester()
     {
+        $this->layout = 'login_layout';
         return $this->render('tester');
     }
 }
