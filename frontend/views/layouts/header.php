@@ -36,8 +36,8 @@ use yii\helpers\Html;
         <div class="row align-items-center">
             <div class="col-6">
                 <div class="mobile-logo logo-width">
-                    <a href="#">
-                        <?= Html::img('@web/images/logo/logo.png')?>
+                    <a href="<?= Yii::$app->homeUrl?>" class="logo-text-dark">
+                        CAR RENTAL
                     </a>
                 </div>
             </div>
