@@ -12,7 +12,6 @@ class AppAsset extends AssetBundle
     public $basePath = '@webroot';
     public $baseUrl = '@web';
     public $css = [
-//        'css/site.css',
         'css/vendor/bootstrap.min.css',
         'css/vendor/font-awesome.css',
         'css/vendor/dlicon.css',
@@ -37,7 +36,6 @@ class AppAsset extends AssetBundle
         'js/plugins/jarallax.min.js',
         'js/plugins/countdown.js',
         'js/plugins/magnific-popup.js',
-//        'js/plugins/instafeed.js',
         'js/plugins/tilt.js',
         'js/plugins/images-loaded.js',
         'js/plugins/isotope.js',
