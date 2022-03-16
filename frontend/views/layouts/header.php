@@ -8,7 +8,7 @@ use yii\helpers\Html;
             <div class="row align-items-center">
                 <div class="col-xl-2 col-lg-2">
                     <div class="logo logo-width">
-                        <a href="#" class="logo-text">
+                        <a href="<?= Yii::$app->homeUrl?>" class="logo-text">
                             CAR RENTAL
                         </a>
                     </div>
@@ -18,8 +18,10 @@ use yii\helpers\Html;
                         <nav>
                             <ul>
                                 <li class="position-static"><a class="active" href="#">Home </a></li>
-                                <li><a href="#">Pages</a></li></li>
+                                <li><a href="#">Pages</a></li>
                                 <li><a href="#">Blog</a></li>
+                                <li><a href="<?= \yii\helpers\Url::toRoute('site/faq')?>">Faq</a></li>
+
                             </ul>
                         </nav>
                     </div>
