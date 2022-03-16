@@ -9,7 +9,7 @@ use yii\helpers\Html;
             <div class="row">
                 <div class="footer-column footer-width-26 footer-logo-center">
                     <div class="footer-widget footer-logo mb-30">
-                        <a href="#" class="logo-text">
+                        <a href="<?= Yii::$app->homeUrl?>" class="logo-text">
                             CAR RENTAL
                         </a>
                     </div>
