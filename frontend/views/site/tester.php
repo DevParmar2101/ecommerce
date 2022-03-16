@@ -3,7 +3,6 @@
 use yii\helpers\Html;
 ?>
 
-
 <div class="login-register-area mt-100 pt-95 pb-100">
     <div class="container">
         <div class="row justify-content-center">
