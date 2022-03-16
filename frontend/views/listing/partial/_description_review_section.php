@@ -52,7 +52,6 @@ use yii\helpers\Html;
                                 <div class="single-review">
                                     <div class="review-img">
                                         <?= Html::img('@web/images/product-details/client-1.jpg')?>
-<!--                                        <img src="assets/images/product-details/client-1.jpg" alt="">-->
                                     </div>
                                     <div class="review-content">
                                         <div class="review-top-wrap">
@@ -142,7 +141,6 @@ use yii\helpers\Html;
                                             <div class="col-lg-4 col-md-6 col-sm-5">
                                                 <div class="pro-dec-brand-img text-center">
                                                     <?= Html::img('@web/images/brand-logo/brand-logo-7.png')?>
-<!--                                                    <img src="assets/images/brand-logo/brand-logo-7.png" alt="">-->
                                                 </div>
                                             </div>
                                             <div class="col-lg-8 col-md-6 col-sm-7">
