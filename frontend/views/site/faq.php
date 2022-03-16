@@ -1,6 +1,8 @@
 <?php
 
 use yii\helpers\Html;
+
+$this->title = 'Faq Page';
 ?>
 
 
