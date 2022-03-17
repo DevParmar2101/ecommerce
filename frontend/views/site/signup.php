@@ -20,11 +20,11 @@ $this->params['breadcrumbs'][] = $this->title;
                     <div class="login-register-form">
                         <?php $form = ActiveForm::begin(['id' => 'form-signup']); ?>
                         <div class="sin-login-register">
-                            <label>Username or email address <span>*</span></label>
+                            <label>Username<span>*</span></label>
                             <?= $form->field($model, 'username')->textInput(['autofocus' => true])->label(false) ?>
                         </div>
                         <div class="sin-login-register">
-                            <label>Email <span>*</span></label>
+                            <label>Email<span>*</span></label>
                             <?= $form->field($model, 'email')->label(false) ?>
                         </div>
                         <div class="sin-login-register">
