@@ -27,7 +27,7 @@ use yii\helpers\Html;
                         <div class="product-list-action">
                             <a title="Add to Wishlist" href="#"><i class="fa fa-heart"></i></a>
                             <div class="pro-list-actioncart">
-                                <a title="Add to cart" href="#">Add to cart</a>
+                                <a title="Add to cart" href="#" class="btn btn-dark text-white">Add to cart</a>
                             </div>
                         </div>
                     </div>
@@ -56,7 +56,7 @@ use yii\helpers\Html;
                         <div class="product-list-action">
                             <a title="Add to Wishlist" href="#"><i class="fa fa-heart"></i></a>
                             <div class="pro-list-actioncart">
-                                <a title="Add to cart" href="#">Add to cart</a>
+                                <a title="Add to cart" href="#" class="btn btn-dark text-white">Add to cart</a>
                             </div>
                         </div>
                     </div>
