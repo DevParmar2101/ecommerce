@@ -143,7 +143,7 @@ use yii\helpers\Html;
                 </div>
             </div>
 
-            <div id="product-2" class="tab-pane active">
+            <div id="product-2" class="tab-pane">
                 <div class="row">
                     <div class="custom-col-5">
                         <div class="product-wrap mb-50">
@@ -260,7 +260,7 @@ use yii\helpers\Html;
                 </div>
             </div>
 
-            <div id="product-3" class="tab-pane active">
+            <div id="product-3" class="tab-pane">
                 <div class="row">
                     <div class="custom-col-5">
                         <div class="product-wrap mb-50">
@@ -377,7 +377,7 @@ use yii\helpers\Html;
                 </div>
             </div>
 
-            <div id="product-4" class="tab-pane active">
+            <div id="product-4" class="tab-pane">
                 <div class="row">
                     <div class="custom-col-5">
                         <div class="product-wrap mb-50">
@@ -494,7 +494,7 @@ use yii\helpers\Html;
                 </div>
             </div>
 
-            <div id="product-5" class="tab-pane active">
+            <div id="product-5" class="tab-pane">
                 <div class="row">
                     <div class="custom-col-5">
                         <div class="product-wrap mb-50">
