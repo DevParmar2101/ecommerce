@@ -14,6 +14,10 @@ use Yii;
  */
 class SectionContent extends \yii\db\ActiveRecord
 {
+    const ACTIVE = 1;
+    const INACTIVE = 2;
+    const STATUS_ACTIVE = 'ACTIVE';
+    const STATUS_INACTIVE = 'Inactive';
     /**
      * {@inheritdoc}
      */
@@ -44,6 +48,13 @@ class SectionContent extends \yii\db\ActiveRecord
             'page_name' => 'Page Name',
             'slug' => 'Slug',
             'status' => 'Status',
+        ];
+    }
+    public function getStatus()
+    {
+        return [
+            SectionContent::ACTIVE => SectionContent::STATUS_ACTIVE,
+            SectionContent::INACTIVE => SectionContent::STATUS_INACTIVE,
         ];
     }
 }
