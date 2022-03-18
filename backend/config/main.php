@@ -7,7 +7,7 @@ $params = array_merge(
     require __DIR__ . '/params-local.php'
 );
 
-$baseUrl = str_replace('backend/web','',(new Request())->getBaseUrl());
+$baseUrl = str_replace('backend/web','/admin',(new Request())->getBaseUrl());
 return [
     'id' => 'app-backend',
     'basePath' => dirname(__DIR__),
