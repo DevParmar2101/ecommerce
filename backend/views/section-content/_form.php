@@ -24,4 +24,4 @@ use yii\widgets\ActiveForm;
     <?php ActiveForm::end(); ?>
 </div>
 
-<iframe src="<?= Yii::$app->urlManager->createAbsoluteUrl(['/site/partial/_car_area'])?>" width="100%" height="500" class="border-0"></iframe>
+<iframe src="<?= Yii::$app->urlManagerFrontend->createAbsoluteUrl(['ecommerce/site/car-area'])?>" width="100%" height="500" class="border-0"></iframe>

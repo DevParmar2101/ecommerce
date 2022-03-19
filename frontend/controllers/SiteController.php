@@ -267,4 +267,8 @@ class SiteController extends Controller
         $this->layout = 'login_layout';
         return $this->render('tester');
     }
+    public function actionCarArea()
+    {
+        return $this->render('partial/_car_area');
+    }
 }
