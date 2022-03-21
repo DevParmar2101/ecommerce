@@ -46,11 +46,12 @@ class IndexContentController extends Controller
                 $model->banner_image = $model->banner_title.'.'.$image->extension;
             }
 
-            if ($model->save()) {
+            if ($model->save(false)) {
                 if ($image){
                     $image->saveAs('uploads/index-content/'.$model->banner_image);
                 }
-                return $this->redirect('index');
+                Yii::$app->session->setFlash('success','Data Save SuccessFully');
+                return $this->redirect(['index-content/index']);
             }
 
         } else {
