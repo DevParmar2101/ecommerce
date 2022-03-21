@@ -14,13 +14,16 @@ use yii\widgets\ActiveForm;
 
         <?= $form->field($model, 'name')->textInput(['maxlength' => true]) ?>
 
-        <?= $form->field($model, 'slug')->textInput(['maxlength' => true]) ?>
-
-        <?= $form->field($model, 'status')->textInput() ?>
-
-        <?= $form->field($model, 'created_at')->textInput() ?>
-
-        <?= $form->field($model, 'created_by')->textInput() ?>
+        <?= $form->field($model, 'status')->widget(\kartik\select2\Select2::class,[
+                'options' => [
+                        'placeholder' => 'Select Status...',
+                        'multiple' => false,
+                ],
+                'pluginOptions' => [
+                        'allowClear' => true,
+                ],
+                'data' => $model->getStatus(),
+        ])?>
 
     </div>
     <div class="box-footer">
