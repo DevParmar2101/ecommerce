@@ -14,6 +14,7 @@ use Yii;
  * @property string $created_at
  * @property int $created_by
  *
+ * @property BlogCategory $category
  * @property Comments[] $comments
  * @property User $createdBy
  */
@@ -39,6 +40,7 @@ class Blog extends \yii\db\ActiveRecord
             [['created_at'], 'safe'],
             [['blog_name'], 'string', 'max' => 255],
             [['created_by'], 'exist', 'skipOnError' => true, 'targetClass' => User::className(), 'targetAttribute' => ['created_by' => 'id']],
+            [['category_id'], 'exist', 'skipOnError' => true, 'targetClass' => BlogCategory::className(), 'targetAttribute' => ['category_id' => 'id']],
         ];
     }
 
@@ -55,6 +57,16 @@ class Blog extends \yii\db\ActiveRecord
             'created_at' => 'Created At',
             'created_by' => 'Created By',
         ];
+    }
+
+    /**
+     * Gets query for [[Category]].
+     *
+     * @return \yii\db\ActiveQuery
+     */
+    public function getCategory()
+    {
+        return $this->hasOne(BlogCategory::className(), ['id' => 'category_id']);
     }
 
     /**

@@ -58,9 +58,9 @@ class IndexContent extends \yii\db\ActiveRecord
             'section_one_title' => 'Section One Title',
             'section_two_title' => 'Section Two Title',
             'section_three_title' => 'Section Three Title',
-            'section_content_one_id' => 'Section Content One ID',
-            'section_content_two_id' => 'Section Content Two ID',
-            'section_content_three_id' => 'Section Content Three ID',
+            'section_content_one_id' => 'Section One Content ID',
+            'section_content_two_id' => 'Section Two Content ID',
+            'section_content_three_id' => 'Section Three Content ID',
         ];
     }
     public function getSection()
