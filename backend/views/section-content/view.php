@@ -6,7 +6,7 @@ use yii\widgets\DetailView;
 /* @var $this yii\web\View */
 /* @var $model common\models\SectionContent */
 
-$this->title = $model->id;
+$this->title = $model->page_name;
 $this->params['breadcrumbs'][] = ['label' => 'Section Contents', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
@@ -20,15 +20,24 @@ $this->params['breadcrumbs'][] = $this->title;
                 'method' => 'post',
             ],
         ]) ?>
+        <?= Html::a('Back',['section-content/index'],['class' => 'btn btn-warning btn-flat'])?>
     </div>
     <div class="box-body table-responsive no-padding">
         <?= DetailView::widget([
             'model' => $model,
             'attributes' => [
-                'id',
                 'page_name',
                 'slug',
-                'status',
+                [
+                        'attribute' => 'status',
+                        'value'=> function($model){
+                            if ($model->status == \common\models\SectionContent::ACTIVE) {
+                                return \common\models\SectionContent::STATUS_ACTIVE;
+                            }else{
+                                return \common\models\SectionContent::STATUS_INACTIVE;
+                            }
+                        }
+                ],
             ],
         ]) ?>
     </div>
