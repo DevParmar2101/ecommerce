@@ -3,6 +3,7 @@
 namespace common\models;
 
 use Yii;
+use yii\helpers\ArrayHelper;
 
 /**
  * This is the model class for table "index_content".
@@ -21,6 +22,7 @@ use Yii;
  */
 class IndexContent extends \yii\db\ActiveRecord
 {
+    const FIRST_ID = 1;
     /**
      * {@inheritdoc}
      */
@@ -60,5 +62,12 @@ class IndexContent extends \yii\db\ActiveRecord
             'section_content_two_id' => 'Section Content Two ID',
             'section_content_three_id' => 'Section Content Three ID',
         ];
+    }
+    public function getSection()
+    {
+        $section = ArrayHelper::map(SectionContent::find()->where(['status' => SectionContent::ACTIVE])->all(),'id','slug');
+
+        return $section;
+
     }
 }
