@@ -39,7 +39,7 @@ $this->params['breadcrumbs'][] = $this->title;
                             if ($model->status == \common\models\Blog::ACTIVE){
                                 return \common\models\Blog::STATUS_ACTIVE;
                             }else{
-                                return \common\models\Blog::STATUS_INACTIVE
+                                return \common\models\Blog::STATUS_INACTIVE;
                             }
                         }
                 ],

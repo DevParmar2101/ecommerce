@@ -48,7 +48,7 @@ use yii\widgets\ActiveForm;
                         'allowClear' => true,
                     ],
                     'data' => $model->getStatus(),
-                    ]) ?>
+                ]) ?>
             </div>
         </div>
 
