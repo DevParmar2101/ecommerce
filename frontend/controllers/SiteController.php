@@ -269,6 +269,6 @@ class SiteController extends Controller
     }
     public function actionCarArea()
     {
-        return $this->render('partial/car_area');
+        return $this->render('car-area');
     }
 }
