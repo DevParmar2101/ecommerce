@@ -35,13 +35,19 @@ class IndexContentController extends Controller
      */
     public function actionIndex()
     {
-        $searchModel = new IndexContentSearch();
-        $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
+        $model = new IndexContent();
 
-        return $this->render('index', [
-            'searchModel' => $searchModel,
-            'dataProvider' => $dataProvider,
-        ]);
+        if ($model->load(Yii::$app->request->post())) {
+
+            if ($model->save()){
+                return $this->redirect('index');
+            }
+
+        } else {
+            return $this->render('index', [
+                'model' => $model,
+            ]);
+        }
     }
 
     /**
