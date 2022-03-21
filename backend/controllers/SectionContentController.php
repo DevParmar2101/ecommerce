@@ -5,6 +5,7 @@ namespace backend\controllers;
 use Yii;
 use common\models\SectionContent;
 use common\models\SectionContentSearch;
+use yii\helpers\Inflector;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
@@ -65,7 +66,9 @@ class SectionContentController extends Controller
     {
         $model = new SectionContent();
 
-        if ($model->load(Yii::$app->request->post()) && $model->save()) {
+        if ($model->load(Yii::$app->request->post())) {
+                $model->slug = Inflector::slug($model->page_name);
+                $model->save();
             return $this->redirect(['view', 'id' => $model->id]);
         } else {
             return $this->render('create', [

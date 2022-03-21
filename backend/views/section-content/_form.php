@@ -15,7 +15,7 @@ use yii\widgets\ActiveForm;
 
         <?= $form->field($model, 'page_name')->textInput(['maxlength' => true]) ?>
 
-        <?= $form->field($model, 'status')->textInput() ?>
+        <?= $form->field($model, 'status')->dropDownList($model->getStatus(),['prompt'=> 'Select Status']) ?>
 
     </div>
     <div class="box-footer">
@@ -24,4 +24,8 @@ use yii\widgets\ActiveForm;
     <?php ActiveForm::end(); ?>
 </div>
 
-<iframe src="<?= Yii::$app->urlManagerFrontend->createAbsoluteUrl(['ecommerce/site/car-area'])?>" width="100%" height="500" class="border-0"></iframe>
+<?php if (Yii::$app->controller->id == 'section-content' && Yii::$app->controller->action == 'update') {?>
+<div class="justify-content-center">
+    <iframe src="<?= Yii::$app->urlManagerFrontend->createAbsoluteUrl(['ecommerce/site/car-area'])?>" width="100%" height="550" class="border-0"></iframe>
+</div>
+<?php }?>
