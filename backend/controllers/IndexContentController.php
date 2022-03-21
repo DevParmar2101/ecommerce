@@ -7,6 +7,7 @@ use common\models\IndexContent;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
+use yii\web\UploadedFile;
 
 /**
  * IndexContentController implements the CRUD actions for IndexContent model.
@@ -39,8 +40,16 @@ class IndexContentController extends Controller
             $model = new IndexContent();
         }
         if ($model->load(Yii::$app->request->post())) {
+            $image = UploadedFile::getInstance($model,'banner_image');
 
-            if ($model->save()){
+            if ($image) {
+                $model->banner_image = $model->banner_title.'.'.$image->extension;
+            }
+
+            if ($model->save()) {
+                if ($image){
+                    $image->saveAs('uploads/index-content/'.$model->banner_image);
+                }
                 return $this->redirect('index');
             }
 
