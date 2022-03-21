@@ -4,7 +4,6 @@ namespace backend\controllers;
 
 use Yii;
 use common\models\IndexContent;
-use common\models\IndexContentSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
