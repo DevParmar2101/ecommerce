@@ -25,12 +25,19 @@ $this->params['breadcrumbs'][] = $this->title;
         <?= DetailView::widget([
             'model' => $model,
             'attributes' => [
-                'id',
                 'name',
                 'slug',
-                'status',
+                [
+                        'attribute' => 'status',
+                        'value' => function($model){
+                            if ($model->status == \common\models\BlogCategory::ACTIVE){
+                                return \common\models\BlogCategory::STATUS_ACTIVE;
+                            }else{
+                                return \common\models\BlogCategory::STATUS_INACTIVE;
+                            }
+                        }
+                ],
                 'created_at:datetime',
-                'created_by',
             ],
         ]) ?>
     </div>
