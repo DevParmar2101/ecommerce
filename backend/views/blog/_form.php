@@ -19,7 +19,16 @@ use yii\widgets\ActiveForm;
             'preset' => 'advanced',
         ]) ?>
 
-        <?= $form->field($model, 'category_id')->textInput() ?>
+        <?= $form->field($model, 'category_id')->widget(\kartik\select2\Select2::class,[
+                'options' => [
+                        'placeholder' => 'Select Category...',
+                        'multiple'  => false,
+                ],
+                'pluginOptions' => [
+                        'allowClear' => true,
+                ],
+                'data' => $model->getCategoryID(),
+        ]) ?>
 
     </div>
     <div class="box-footer">
