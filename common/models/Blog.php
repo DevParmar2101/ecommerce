@@ -105,4 +105,11 @@ class Blog extends \yii\db\ActiveRecord
 
         return $model;
     }
+    public function getStatus()
+    {
+        return [
+            Blog::ACTIVE => Blog::STATUS_ACTIVE,
+            Blog::INACTIVE => Blog::STATUS_INACTIVE,
+        ];
+    }
 }
