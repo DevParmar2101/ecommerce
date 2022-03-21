@@ -14,13 +14,12 @@ use yii\widgets\ActiveForm;
 
         <?= $form->field($model, 'blog_name')->textInput(['maxlength' => true]) ?>
 
-        <?= $form->field($model, 'content')->textarea(['rows' => 6]) ?>
+        <?= $form->field($model, 'content')->widget(\dosamigos\ckeditor\CKEditor::class,[
+            'options' => ['rows' => 10],
+            'preset' => 'advanced',
+        ]) ?>
 
         <?= $form->field($model, 'category_id')->textInput() ?>
-
-        <?= $form->field($model, 'created_at')->textInput() ?>
-
-        <?= $form->field($model, 'created_by')->textInput() ?>
 
     </div>
     <div class="box-footer">
