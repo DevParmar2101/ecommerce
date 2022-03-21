@@ -14,17 +14,11 @@ use yii\widgets\ActiveForm;
 
         <?= $form->field($model, 'blog_name')->textInput(['maxlength' => true]) ?>
 
-        <?= $form->field($model, 'image')->textInput(['maxlength' => true]) ?>
-
         <?= $form->field($model, 'content')->textarea(['rows' => 6]) ?>
 
-        <?= $form->field($model, 'slug')->textInput(['maxlength' => true]) ?>
+        <?= $form->field($model, 'image')->textInput(['maxlength' => true]) ?>
 
         <?= $form->field($model, 'category_id')->textInput() ?>
-
-        <?= $form->field($model, 'created_at')->textInput() ?>
-
-        <?= $form->field($model, 'created_by')->textInput() ?>
 
         <?= $form->field($model, 'status')->textInput() ?>
 

@@ -23,15 +23,26 @@ $this->params['breadcrumbs'][] = $this->title;
             'columns' => [
                 ['class' => 'yii\grid\SerialColumn'],
 
-                'id',
+                [
+                    'attribute' => 'image',
+                    'format' => 'raw',
+                    'value' => function($model) {
+                        return Html::img(Yii::getAlias('@web/uploads/blog/'.$model->image),['class' => 'img-thumbnail','width' => 100, 'height' => 100]);
+                    }
+                ],
                 'blog_name',
-                'image',
                 'content:ntext',
                 'slug',
-                // 'category_id',
-                // 'created_at',
-                // 'created_by',
-                // 'status',
+                [
+                        'attribute' => 'status',
+                        'value' => function($model){
+                            if ($model->status == \common\models\Blog::ACTIVE){
+                                return \common\models\Blog::STATUS_ACTIVE;
+                            }else{
+                                return \common\models\Blog::STATUS_INACTIVE;
+                            }
+                        }
+                ],
 
                 ['class' => 'yii\grid\ActionColumn'],
             ],
