@@ -20,14 +20,14 @@ $this->params['breadcrumbs'][] = $this->title;
                 'method' => 'post',
             ],
         ]) ?>
+        <?= Html::a('Back',['index'],['class' => 'btn btn-warning btn-flat'])?>
     </div>
     <div class="box-body table-responsive no-padding">
         <?= DetailView::widget([
             'model' => $model,
             'attributes' => [
                 'name',
-                'slug',
-                [
+                    [
                         'attribute' => 'status',
                         'value' => function($model){
                             if ($model->status == \common\models\BlogCategory::ACTIVE){

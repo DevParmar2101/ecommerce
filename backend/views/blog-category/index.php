@@ -23,12 +23,17 @@ $this->params['breadcrumbs'][] = $this->title;
             'columns' => [
                 ['class' => 'yii\grid\SerialColumn'],
 
-                'id',
                 'name',
-                'slug',
-                'status',
-                'created_at',
-                // 'created_by',
+                [
+                        'attribute' => 'status',
+                        'value' => function($model){
+                            if ($model->status == \common\models\BlogCategory::ACTIVE){
+                                return \common\models\BlogCategory::STATUS_ACTIVE;
+                            }else{
+                                return \common\models\BlogCategory::STATUS_INACTIVE;
+                            }
+                        }
+                ],
 
                 ['class' => 'yii\grid\ActionColumn'],
             ],
