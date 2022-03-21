@@ -64,13 +64,40 @@ use kartik\file\FileInput;
 
         <div class="row-lg">
             <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12">
-                <?= $form->field($model, 'section_content_one_id')->textInput() ?>
+                <?= $form->field($model, 'section_content_one_id')->widget(\kartik\select2\Select2::class,[
+                    'options' => [
+                        'placeholder' => 'Select Section One...',
+                        'multiple' => false,
+                    ],
+                    'pluginOptions' => [
+                        'allowClear' => true,
+                    ],
+                    'data' => $model->getSection(),
+                ]) ?>
             </div>
             <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12">
-                <?= $form->field($model, 'section_content_two_id')->textInput() ?>
+                <?= $form->field($model, 'section_content_two_id')->widget(\kartik\select2\Select2::class,[
+                    'options' => [
+                        'placeholder' => 'Select Section Two...',
+                        'multiple' => false,
+                    ],
+                    'pluginOptions' => [
+                        'allowClear' => true,
+                    ],
+                    'data' => $model->getSection(),
+                ]) ?>
             </div>
             <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12">
-                <?= $form->field($model, 'section_content_three_id')->textInput() ?>
+                <?= $form->field($model, 'section_content_three_id')->widget(\kartik\select2\Select2::class,[
+                    'options' => [
+                        'placeholder' => 'Select Section Two...',
+                        'multiple' => false,
+                    ],
+                    'pluginOptions' => [
+                        'allowClear' => true,
+                    ],
+                    'data' => $model->getSection(),
+                ]) ?>
             </div>
         </div>
 
