@@ -3,16 +3,20 @@
 namespace common\models;
 
 use Yii;
+use yii\helpers\ArrayHelper;
 
 /**
  * This is the model class for table "blog".
  *
  * @property int $id
  * @property string $blog_name
+ * @property string $image
  * @property string $content
+ * @property string $slug
  * @property int $category_id
  * @property string $created_at
  * @property int $created_by
+ * @property int $status
  *
  * @property BlogCategory $category
  * @property Comments[] $comments
@@ -34,11 +38,11 @@ class Blog extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['blog_name', 'content', 'category_id', 'created_by'], 'required'],
+            [['blog_name', 'image', 'content', 'slug', 'category_id', 'created_by'], 'required'],
             [['content'], 'string'],
-            [['category_id', 'created_by'], 'integer'],
+            [['category_id', 'created_by', 'status'], 'integer'],
             [['created_at'], 'safe'],
-            [['blog_name'], 'string', 'max' => 255],
+            [['blog_name', 'image', 'slug'], 'string', 'max' => 255],
             [['created_by'], 'exist', 'skipOnError' => true, 'targetClass' => User::className(), 'targetAttribute' => ['created_by' => 'id']],
             [['category_id'], 'exist', 'skipOnError' => true, 'targetClass' => BlogCategory::className(), 'targetAttribute' => ['category_id' => 'id']],
         ];
@@ -52,10 +56,13 @@ class Blog extends \yii\db\ActiveRecord
         return [
             'id' => 'ID',
             'blog_name' => 'Blog Name',
+            'image' => 'Image',
             'content' => 'Content',
+            'slug' => 'Slug',
             'category_id' => 'Category ID',
             'created_at' => 'Created At',
             'created_by' => 'Created By',
+            'status' => 'Status'
         ];
     }
 
@@ -87,5 +94,11 @@ class Blog extends \yii\db\ActiveRecord
     public function getCreatedBy()
     {
         return $this->hasOne(User::className(), ['id' => 'created_by']);
+    }
+    public function getCategoryID()
+    {
+        $model = ArrayHelper::map(BlogCategory::find()->where(['status' => BlogCategory::ACTIVE])->all(),'id','name');
+
+        return $model;
     }
 }
