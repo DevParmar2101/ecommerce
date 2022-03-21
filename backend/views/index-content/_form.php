@@ -34,6 +34,10 @@ use kartik\file\FileInput;
             <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <?= $form->field($model,'banner_image')->widget(FileInput::class,[
                     'pluginOptions' => [
+
+                        'initialPreview' => Html::img(Yii::getAlias('@web/uploads/index-content/'.$model->banner_image),['class' => 'img-thumbnail']),
+                        'initialPreviewData' => true,
+                        'showZoomSettings'=> false,
                         'showPreview' => true,
                         'showCaption' => true,
                         'showRemove' => false,
