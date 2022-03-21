@@ -12,7 +12,10 @@ class m220321_094452_add_status_field_in_blog_table extends Migration
      */
     public function safeUp()
     {
-
+        $query =<<<EOF
+ALTER TABLE `blog` ADD `status` TINYINT(1) NOT NULL AFTER `created_by`; 
+EOF;
+        $this->execute($query);
     }
 
     /**
