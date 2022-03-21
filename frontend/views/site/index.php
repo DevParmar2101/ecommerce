@@ -4,10 +4,10 @@
 
 $this->title = 'My Yii Application';
 ?>
-    <?= $this->render('partial/_slider_area')?>
+    <?= $this->render('partial/slider-area')?>
 
-    <?= $this->render('partial/_slider_section')?>
+    <?= $this->render('partial/slider-section')?>
 
-    <?= $this->render('car_area')?>
+    <?= $this->render('partial/car-area')?>
 
-    <?= $this->render('latest_post')?>
+    <?= $this->render('partial/latest-post')?>
