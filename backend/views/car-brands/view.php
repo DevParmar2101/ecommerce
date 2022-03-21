@@ -6,7 +6,7 @@ use yii\widgets\DetailView;
 /* @var $this yii\web\View */
 /* @var $model common\models\CarBrands */
 
-$this->title = $model->id;
+$this->title = $model->brand_name;
 $this->params['breadcrumbs'][] = ['label' => 'Car Brands', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
@@ -20,18 +20,30 @@ $this->params['breadcrumbs'][] = $this->title;
                 'method' => 'post',
             ],
         ]) ?>
+        <?= Html::a('Back',['index'],['class' => 'btn btn-warning btn-flat'])?>
     </div>
     <div class="box-body table-responsive no-padding">
         <?= DetailView::widget([
             'model' => $model,
             'attributes' => [
-                'id',
                 'brand_name',
                 'brand_slug',
-                'brand_logo',
-                'status',
+                [
+                        'attribute' => 'brand_logo',
+                        'format' => 'raw',
+                        'value' => Html::img(Yii::getAlias('@web/uploads/car-brands/'.$model->brand_logo),['class' => 'img-thumbnail','width' => 200,'height' => 475]),
+                ],
+                [
+                        'attribute' => 'status',
+                        'value' => function($model) {
+                            if ($model->status == \common\models\CarBrands::ACTIVE){
+                                return \common\models\CarBrands::STATUS_ACTIVE;
+                            }else{
+                                return \common\models\CarBrands::STATUS_INACTIVE;
+                            }
+                        }
+                ],
                 'created_at:datetime',
-                'created_by',
             ],
         ]) ?>
     </div>

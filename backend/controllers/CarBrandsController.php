@@ -2,12 +2,15 @@
 
 namespace backend\controllers;
 
+use common\models\User;
 use Yii;
 use common\models\CarBrands;
 use common\models\CarBrandsSearch;
+use yii\helpers\Inflector;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
+use yii\web\UploadedFile;
 
 /**
  * CarBrandsController implements the CRUD actions for CarBrands model.
@@ -65,8 +68,25 @@ class CarBrandsController extends Controller
     {
         $model = new CarBrands();
 
-        if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'id' => $model->id]);
+        if ($model->load(Yii::$app->request->post())) {
+            $model->brand_slug = Inflector::slug($model->brand_name);
+            $model->created_by = Yii::$app->user->id;
+            $image = UploadedFile::getInstance($model,'brand_logo');
+
+            if ($image) {
+                $model->brand_logo = $model->brand_name.rand(1,100).'.'.$image->extension;
+            }
+            if ($model->save(false)) {
+                if ($image) {
+                    $image->saveAs('uploads/car-brands/'.$model->brand_logo);
+                }
+                Yii::$app->session->setFlash('success','Car Brand created SuccessFully!');
+                return $this->redirect(['view','id' => $model->id]);
+            }else{
+                echo '<pre>';
+                print_r($model);
+                die();
+            }
         } else {
             return $this->render('create', [
                 'model' => $model,
@@ -83,9 +103,25 @@ class CarBrandsController extends Controller
     public function actionUpdate($id)
     {
         $model = $this->findModel($id);
+        $logo_image = null;
+        if ($model->brand_logo){
+            $logo_image = $model->brand_logo;
+        }
 
-        if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'id' => $model->id]);
+        if ($model->load(Yii::$app->request->post())) {
+            $image = UploadedFile::getInstance($model,'brand_logo');
+            if ($image) {
+                $model->brand_logo = base64_encode($model->brand_name).rand(1,100).'.'.$image->extension;
+            }else{
+                $model->brand_logo = $logo_image;
+            }
+            if ($model->save(false)) {
+                if ($image) {
+                    $image->saveAs('uploads/car-brands/'.$model->brand_logo);
+                }
+                Yii::$app->session->setFlash('success','Car Brand Data Updated SuccessFully!');
+                return $this->redirect(['view', 'id' => $model->id]);
+            }
         } else {
             return $this->render('update', [
                 'model' => $model,
