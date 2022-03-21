@@ -8,6 +8,6 @@ $this->title = 'My Yii Application';
 
     <?= $this->render('partial/_slider_section')?>
 
-    <?= $this->render('partial/_car_area')?>
+    <?= $this->render('car_area')?>
 
-    <?= $this->render('partial/_latest_post')?>
+    <?= $this->render('latest_post')?>
