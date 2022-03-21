@@ -5,6 +5,7 @@ namespace backend\controllers;
 use Yii;
 use common\models\BlogCategory;
 use common\models\BlogCategorySearch;
+use yii\helpers\Inflector;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
@@ -65,7 +66,10 @@ class BlogCategoryController extends Controller
     {
         $model = new BlogCategory();
 
-        if ($model->load(Yii::$app->request->post()) && $model->save()) {
+        if ($model->load(Yii::$app->request->post())) {
+            $model->slug = Inflector::slug($model->name);
+            $model->created_by = Yii::$app->user->id;
+            $model->save();
             return $this->redirect(['view', 'id' => $model->id]);
         } else {
             return $this->render('create', [
