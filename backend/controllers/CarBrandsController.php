@@ -82,10 +82,6 @@ class CarBrandsController extends Controller
                 }
                 Yii::$app->session->setFlash('success','Car Brand created SuccessFully!');
                 return $this->redirect(['view','id' => $model->id]);
-            }else{
-                echo '<pre>';
-                print_r($model);
-                die();
             }
         } else {
             return $this->render('create', [
