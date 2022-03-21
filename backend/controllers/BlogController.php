@@ -5,9 +5,11 @@ namespace backend\controllers;
 use Yii;
 use common\models\Blog;
 use common\models\BlogSearch;
+use yii\helpers\Inflector;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
+use yii\web\UploadedFile;
 
 /**
  * BlogController implements the CRUD actions for Blog model.
@@ -65,8 +67,21 @@ class BlogController extends Controller
     {
         $model = new Blog();
 
-        if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'id' => $model->id]);
+        if ($model->load(Yii::$app->request->post())) {
+            $model->slug = Inflector::slug($model->blog_name);
+            $model->created_by = Yii::$app->user->id;
+            $image = UploadedFile::getInstance($model,'image');
+
+            if ($image) {
+                $model->image = $model->image.rand(1,1000).'.'.$image->extension;
+            }
+            if ($model->save(false)) {
+                if ($image) {
+                    $image->saveAs('uploads/blog/'.$model->image);
+                }
+                Yii::$app->session->setFlash('success','Blog Created SuccessFully!');
+                return $this->redirect(['view', 'id' => $model->id]);
+            }
         } else {
             return $this->render('create', [
                 'model' => $model,
@@ -83,8 +98,13 @@ class BlogController extends Controller
     public function actionUpdate($id)
     {
         $model = $this->findModel($id);
+        $blog_image = null;
 
-        if ($model->load(Yii::$app->request->post()) && $model->save()) {
+        if ($model->image) {
+            $blog_image = $model->image;
+        }
+
+        if ($model->load(Yii::$app->request->post())) {
             return $this->redirect(['view', 'id' => $model->id]);
         } else {
             return $this->render('update', [
