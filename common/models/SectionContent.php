@@ -16,7 +16,7 @@ class SectionContent extends \yii\db\ActiveRecord
 {
     const ACTIVE = 1;
     const INACTIVE = 2;
-    const STATUS_ACTIVE = 'ACTIVE';
+    const STATUS_ACTIVE = 'Active';
     const STATUS_INACTIVE = 'Inactive';
     /**
      * {@inheritdoc}
