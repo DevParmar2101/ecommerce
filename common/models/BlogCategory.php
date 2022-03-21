@@ -18,6 +18,10 @@ use Yii;
  */
 class BlogCategory extends \yii\db\ActiveRecord
 {
+    const ACTIVE = 1;
+    const INACTIVE = 0;
+    const STATUS_INACTIVE = 'Inactive';
+    const STATUS_ACTIVE = 'Active';
     /**
      * {@inheritdoc}
      */
@@ -63,5 +67,12 @@ class BlogCategory extends \yii\db\ActiveRecord
     public function getCreatedBy()
     {
         return $this->hasOne(User::className(), ['id' => 'created_by']);
+    }
+    public function getStatus()
+    {
+        return [
+            BlogCategory::ACTIVE => BlogCategory::STATUS_ACTIVE,
+            BlogCategory::INACTIVE => BlogCategory::STATUS_INACTIVE,
+        ];
     }
 }
