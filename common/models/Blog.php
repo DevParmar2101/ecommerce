@@ -24,6 +24,10 @@ use yii\helpers\ArrayHelper;
  */
 class Blog extends \yii\db\ActiveRecord
 {
+    const ACTIVE = 1;
+    const INACTIVE = 0;
+    const STATUS_ACTIVE = 'Active';
+    const STATUS_INACTIVE = 'Inactive';
     /**
      * {@inheritdoc}
      */
@@ -59,7 +63,7 @@ class Blog extends \yii\db\ActiveRecord
             'image' => 'Image',
             'content' => 'Content',
             'slug' => 'Slug',
-            'category_id' => 'Category ID',
+            'category_id' => 'Category',
             'created_at' => 'Created At',
             'created_by' => 'Created By',
             'status' => 'Status'
