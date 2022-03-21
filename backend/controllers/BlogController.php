@@ -105,7 +105,21 @@ class BlogController extends Controller
         }
 
         if ($model->load(Yii::$app->request->post())) {
-            return $this->redirect(['view', 'id' => $model->id]);
+            $image = UploadedFile::getInstance($model,'image');
+            if ($image) {
+                $model->image = base64_encode($model->blog_name).rand(1,1000).'.'.$image->extension;
+            }else{
+                $model->image = $blog_image;
+            }
+
+            if ($model->save()) {
+                if ($image) {
+                    $image->saveAs('uploads/blog/'.$model->blog_name);
+                }
+                Yii::$app->session->setFlash('success','Blog Data Updated SuccessFully!');
+                return $this->redirect(['view', 'id' => $model->id]);
+            }
+
         } else {
             return $this->render('update', [
                 'model' => $model,
