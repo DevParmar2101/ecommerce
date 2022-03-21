@@ -43,7 +43,7 @@ use kartik\file\FileInput;
                         'showRemove' => false,
                         'showUpload' => false,
                     ],
-                    'options' => ['accept' => 'image/*']
+                    'options' => ['accept' => 'image/*'],
                 ])?>
             </div>
         </div>

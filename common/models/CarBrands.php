@@ -19,6 +19,11 @@ use Yii;
  */
 class CarBrands extends \yii\db\ActiveRecord
 {
+    const ACTIVE = 1;
+    const INACTIVE = 0;
+    const STATUS_ACTIVE = 'Active';
+    const STATUS_INACTIVE = 'Inactive';
+
     /**
      * {@inheritdoc}
      */
@@ -65,5 +70,12 @@ class CarBrands extends \yii\db\ActiveRecord
     public function getCreatedBy()
     {
         return $this->hasOne(User::className(), ['id' => 'created_by']);
+    }
+    public function getStatus()
+    {
+        return [
+            CarBrands::ACTIVE => CarBrands::STATUS_ACTIVE,
+            CarBrands::INACTIVE => CarBrands::STATUS_INACTIVE,
+            ];
     }
 }

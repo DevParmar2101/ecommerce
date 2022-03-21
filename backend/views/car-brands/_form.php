@@ -12,17 +12,45 @@ use yii\widgets\ActiveForm;
     <?php $form = ActiveForm::begin(); ?>
     <div class="box-body table-responsive">
 
-        <?= $form->field($model, 'brand_name')->textInput(['maxlength' => true]) ?>
+        <div class="row-lg">
+            <div class="col-md-12">
+                <?= $form->field($model, 'brand_name')->textInput(['maxlength' => true]) ?>
+            </div>
+        </div>
 
-        <?= $form->field($model, 'brand_slug')->textInput(['maxlength' => true]) ?>
+        <div class="row-lg">
+            <div class="col-md-12">
+                <?= $form->field($model, 'brand_logo')->widget(\kartik\file\FileInput::class,[
+                    'pluginOptions' => [
 
-        <?= $form->field($model, 'brand_logo')->textInput(['maxlength' => true]) ?>
+                        'initialPreview' => Html::img(Yii::getAlias('@web/uploads/index-content/'.$model->brand_logo),['class' => 'img-thumbnail']),
+                        'initialPreviewData' => true,
+                        'showZoomSettings'=> false,
+                        'showPreview' => true,
+                        'showCaption' => true,
+                        'showRemove' => false,
+                        'showUpload' => false,
 
-        <?= $form->field($model, 'status')->textInput() ?>
+                    ],
+                    'options' => ['accept' => 'image/*'],
+                ]) ?>
+            </div>
+        </div>
 
-        <?= $form->field($model, 'created_at')->textInput() ?>
-
-        <?= $form->field($model, 'created_by')->textInput() ?>
+        <div class="row-lg">
+            <div class="col-md-12">
+                <?= $form->field($model, 'status')->widget(\kartik\select2\Select2::class,[
+                    'options' => [
+                        'placeholder' => 'Select Status...',
+                        'multiple' => false
+                    ],
+                    'pluginOptions' => [
+                        'allowClear' => true,
+                    ],
+                    'data' => $model->getStatus(),
+                    ]) ?>
+            </div>
+        </div>
 
     </div>
     <div class="box-footer">
