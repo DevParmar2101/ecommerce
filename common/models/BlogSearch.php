@@ -18,8 +18,8 @@ class BlogSearch extends Blog
     public function rules()
     {
         return [
-            [['id', 'category_id', 'created_by'], 'integer'],
-            [['blog_name', 'content', 'created_at'], 'safe'],
+            [['id', 'category_id', 'created_by', 'status'], 'integer'],
+            [['blog_name', 'image', 'content', 'slug', 'created_at'], 'safe'],
         ];
     }
 
@@ -64,10 +64,13 @@ class BlogSearch extends Blog
             'category_id' => $this->category_id,
             'created_at' => $this->created_at,
             'created_by' => $this->created_by,
+            'status' => $this->status,
         ]);
 
         $query->andFilterWhere(['like', 'blog_name', $this->blog_name])
-            ->andFilterWhere(['like', 'content', $this->content]);
+            ->andFilterWhere(['like', 'image', $this->image])
+            ->andFilterWhere(['like', 'content', $this->content])
+            ->andFilterWhere(['like', 'slug', $this->slug]);
 
         return $dataProvider;
     }

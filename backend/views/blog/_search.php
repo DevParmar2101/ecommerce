@@ -19,13 +19,19 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'blog_name') ?>
 
+    <?= $form->field($model, 'image') ?>
+
     <?= $form->field($model, 'content') ?>
 
-    <?= $form->field($model, 'category_id') ?>
+    <?= $form->field($model, 'slug') ?>
 
-    <?= $form->field($model, 'created_at') ?>
+    <?php // echo $form->field($model, 'category_id') ?>
+
+    <?php // echo $form->field($model, 'created_at') ?>
 
     <?php // echo $form->field($model, 'created_by') ?>
+
+    <?php // echo $form->field($model, 'status') ?>
 
     <div class="form-group">
         <?= Html::submitButton('Search', ['class' => 'btn btn-primary']) ?>

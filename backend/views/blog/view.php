@@ -27,10 +27,13 @@ $this->params['breadcrumbs'][] = $this->title;
             'attributes' => [
                 'id',
                 'blog_name',
+                'image',
                 'content:ntext',
+                'slug',
                 'category_id',
                 'created_at:datetime',
                 'created_by',
+                'status',
             ],
         ]) ?>
     </div>

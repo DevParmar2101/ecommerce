@@ -14,21 +14,19 @@ use yii\widgets\ActiveForm;
 
         <?= $form->field($model, 'blog_name')->textInput(['maxlength' => true]) ?>
 
-        <?= $form->field($model, 'content')->widget(\dosamigos\ckeditor\CKEditor::class,[
-            'options' => ['rows' => 10],
-            'preset' => 'advanced',
-        ]) ?>
+        <?= $form->field($model, 'image')->textInput(['maxlength' => true]) ?>
 
-        <?= $form->field($model, 'category_id')->widget(\kartik\select2\Select2::class,[
-                'options' => [
-                        'placeholder' => 'Select Category...',
-                        'multiple'  => false,
-                ],
-                'pluginOptions' => [
-                        'allowClear' => true,
-                ],
-                'data' => $model->getCategoryID(),
-        ]) ?>
+        <?= $form->field($model, 'content')->textarea(['rows' => 6]) ?>
+
+        <?= $form->field($model, 'slug')->textInput(['maxlength' => true]) ?>
+
+        <?= $form->field($model, 'category_id')->textInput() ?>
+
+        <?= $form->field($model, 'created_at')->textInput() ?>
+
+        <?= $form->field($model, 'created_by')->textInput() ?>
+
+        <?= $form->field($model, 'status')->textInput() ?>
 
     </div>
     <div class="box-footer">
