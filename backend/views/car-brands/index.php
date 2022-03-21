@@ -23,13 +23,24 @@ $this->params['breadcrumbs'][] = $this->title;
             'columns' => [
                 ['class' => 'yii\grid\SerialColumn'],
 
-                'id',
+                [
+                        'attribute' => 'brand_logo',
+                        'format' => 'raw',
+                        'value' => function($model) {
+                            return Html::img(Yii::getAlias('@web/uploads/car-brands/'.$model->brand_logo),['class' => 'img-thumbnail','width' => 100,'height' => 100]);
+                        }
+                ],
                 'brand_name',
-                'brand_slug',
-                'brand_logo',
-                'status',
-                // 'created_at',
-                // 'created_by',
+                [
+                        'attribute' => 'status',
+                        'value' => function($model) {
+                            if ($model->status == \common\models\CarBrands::ACTIVE){
+                                return \common\models\CarBrands::STATUS_ACTIVE;
+                            }else{
+                                return \common\models\CarBrands::STATUS_INACTIVE;
+                            }
+                        }
+                ],
 
                 ['class' => 'yii\grid\ActionColumn'],
             ],
