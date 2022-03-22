@@ -1,28 +1,30 @@
 <?php
 
 use yii\helpers\Html;
+
+/* @var $model \common\models\Blog*/
+$user = \common\models\User::findOne(['id' => $model->created_by]);
 ?>
 <div class="blog-wrap-3 mb-70">
     <div class="blog-img-3 mb-20">
         <a href="#">
-            <?= Html::img('@web/images/blog/blog-8.jpg')?>
+            <?= Html::img(Yii::$app->urlManager->createAbsoluteUrl(['admin/uploads/blog/'.$model->image]))?>
         </a>
     </div>
     <div class="blog-content-3">
         <div class="blog-category">
-            <a href="#">Technology</a>
+            <a href="#"><?= $model->category->name?></a>
         </div>
-        <h3><a href="#">Get Ready Fast For Fall Leaf</a></h3>
+        <h3><a href="#"><?= $model->blog_name?></a></h3>
         <div class="blog-meta">
             <ul>
-                <li><a href="#">Posted on December 5, 2018</a></li>
-                <li>By <a href="#">Joe Doe</a></li>
+                <li><a href="#">Posted on <?= Yii::$app->formatter->asDate($model->created_at)?></a></li>
+                <li>By <a href="#"><?= $model->createdBy->username?></a></li>
             </ul>
         </div>
-        <p>Chances are unless you are very lucky you will go thru many different relationships before you find your special someone. Finding your sole mate is like gambling. In poker and
-        </p>
+        <p><?= mb_substr($model->content,0,450, mb_detect_encoding($model->content))."." ?></p>
         <div class="blog-btn-2 blog-btn-2-red">
-            <a href="#">Read More</a>
+            <?= Html::a('Read More',['blog/blog-inner/'.$model->slug])?>
         </div>
     </div>
 </div>
