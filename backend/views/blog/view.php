@@ -6,7 +6,7 @@ use yii\widgets\DetailView;
 /* @var $this yii\web\View */
 /* @var $model common\models\Blog */
 
-$this->title = $model->id;
+$this->title = $model->blog_name;
 $this->params['breadcrumbs'][] = ['label' => 'Blogs', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
@@ -20,20 +20,41 @@ $this->params['breadcrumbs'][] = $this->title;
                 'method' => 'post',
             ],
         ]) ?>
+        <?= Html::a('Back',['index'],['class' => 'btn btn-warning btn-flat'])?>
     </div>
     <div class="box-body table-responsive no-padding">
         <?= DetailView::widget([
             'model' => $model,
             'attributes' => [
-                'id',
                 'blog_name',
-                'image',
-                'content:ntext',
-                'slug',
-                'category_id',
+                [
+                        'attribute' => 'image',
+                        'format' => 'raw',
+                        'value' => function($model){
+                            return Html::img(Yii::getAlias('@web/uploads/blog/'.$model->image),['class' => 'img-thumbnail','width' => 100,'height' => 100]);
+                        }
+                ],
+                [
+                        'attribute' => 'content',
+                        'format' => 'raw'
+                ],
+                [
+                        'attribute' => 'category_id',
+                        'value' => function($model) {
+                            return $model->category->name;
+                        }
+                ],
                 'created_at:datetime',
-                'created_by',
-                'status',
+                [
+                        'attribute' => 'status',
+                        'value' => function($model) {
+                            if ($model->status == \common\models\Blog::ACTIVE){
+                                return \common\models\Blog::STATUS_ACTIVE;
+                            }else{
+                                return \common\models\Blog::STATUS_INACTIVE;
+                            }
+                        }
+                ],
             ],
         ]) ?>
     </div>

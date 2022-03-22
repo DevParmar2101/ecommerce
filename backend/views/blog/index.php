@@ -31,8 +31,14 @@ $this->params['breadcrumbs'][] = $this->title;
                     }
                 ],
                 'blog_name',
-                'content:ntext',
-                'slug',
+                [
+                        'attribute' => 'content',
+                        'format' => 'raw',
+                        'value' => function ($model) {
+
+                            return mb_substr($model->content,0,550, mb_detect_encoding($model->content)).".";
+                        }
+                ],
                 [
                         'attribute' => 'status',
                         'value' => function($model){
