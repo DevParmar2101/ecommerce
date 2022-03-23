@@ -19,7 +19,7 @@ use yii\helpers\Html;
                             <ul>
                                 <li class="position-static"><a class="active" href="#">Home </a></li>
                                 <li><a href="#">Pages</a></li>
-                                <li><a href="#">Blog</a></li>
+                                <li><a href="<?= \yii\helpers\Url::toRoute(['blog/index'])?>">Blog</a></li>
                                 <li><a href="<?= \yii\helpers\Url::toRoute('site/faq')?>">Faq</a></li>
                                 <?php if (Yii::$app->user->isGuest) {?>
                                 <li><a href="<?= \yii\helpers\Url::toRoute('site/signup')?>">Signup</a></li>
