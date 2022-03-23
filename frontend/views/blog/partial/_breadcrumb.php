@@ -10,7 +10,7 @@ use yii\helpers\Html;
             </div>
             <ul>
                 <li>
-                    <a href="index.html">Home 01 </a>
+                    <a href="<?= Yii::$app->homeUrl?>">Home  </a>
                 </li>
                 <li><span> > </span></li>
                 <li class="active"> Blog </li>

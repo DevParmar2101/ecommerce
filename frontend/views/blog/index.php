@@ -16,7 +16,7 @@ $this->title = 'Blog Index';
 <div class="blog-area-2 pt-100 pb-100">
     <div class="container">
         <div class="row">
-            <div class="col-lg-9">
+            <div class="col-lg-10">
                 <!-- Blog Section is Start -->
                 <?=
                 ListView::widget([
@@ -37,9 +37,10 @@ $this->title = 'Blog Index';
                 ?>
                 <!-- Blog Section is End -->
             </div>
-            <div class="col-lg-3">
+            <div class="col-lg-2">
                 <!-- Blog Sidebar is Start -->
-                <?= $this->render('partial/_blog_sidebar')?>
+
+                <?= $this->render('partial/_blog_sidebar',['category' => $category])?>
                 <!-- Blog Sidebar is End -->
                 <div class="sidebar-widget mb-60">
                     <h4 class="pro-sidebar-title2">Popular Post </h4>
