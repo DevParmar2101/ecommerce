@@ -3,6 +3,8 @@
 namespace frontend\controllers;
 
 use common\models\Blog;
+use common\models\BlogCategory;
+use common\models\BlogCategorySearch;
 use common\models\BlogSearch;
 use yii;
 use yii\web\Controller;
@@ -24,10 +26,13 @@ class BlogController extends Controller
         $searchModel= new BlogSearch();
         $searchModel->status = Blog::find()->where(['status' => Blog::ACTIVE])->all();
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
+        $dataProvider->pagination = ['pageSize' => 5];
 
+        $category = BlogCategory::find()->where(['status' => BlogCategory::ACTIVE])->all();
         return $this->render('index',[
             'searchModel' => $searchModel,
-            'dataProvider' => $dataProvider
+            'dataProvider' => $dataProvider,
+            'category' => $category,
         ]);
     }
 
