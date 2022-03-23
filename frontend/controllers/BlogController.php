@@ -46,7 +46,7 @@ class BlogController extends Controller
      */
     protected function findModel($slug)
     {
-        if (($model = Blog::findOne($slug)) !== null) {
+        if (($model = Blog::findOne(['slug' => $slug])) !== null) {
             return $model;
         } else {
             throw new NotFoundHttpException('The requested page does not exist.');
