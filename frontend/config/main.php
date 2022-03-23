@@ -44,6 +44,9 @@ return [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
             'rules' => [
+                'pattern' => '<slug:[a-z0-9_\-]+>',
+                'blog/blog-inner/<slug:[A-Za-z0-9 -_.]+>' => 'blog/blog-inner',
+                'ul/<unique_id:[a-z0-9_\-]+>' => 'ul/index',
             ],
         ],
     ],
