@@ -3,6 +3,7 @@
 use yii\helpers\Html;
 
 $this->title = 'Blog Inner';
+/* @var $model \common\models\Blog*/
 ?>
 
 <div class="breadcrumb-area section-padding-1 bg-gray breadcrumb-ptb-2">
@@ -13,10 +14,10 @@ $this->title = 'Blog Inner';
             </div>
             <ul>
                 <li>
-                    <a href="#">Home 01 </a>
+                    <a href="#">Blog</a>
                 </li>
                 <li><span> > </span></li>
-                <li class="active"> Blog </li>
+                <li class="active"> <?= $model->slug?> </li>
             </ul>
         </div>
     </div>
@@ -29,28 +30,22 @@ $this->title = 'Blog Inner';
                 <div class="blog-wrap-3 mb-70">
                     <div class="blog-img-3 mb-20">
                         <a href="#">
-                            <?= Html::img('@web/images/blog/blog-8.jpg')?>
+                            <?= Html::img(Yii::$app->urlManager->createAbsoluteUrl('admin/uploads/blog/'.$model->image))?>
 <!--                            <img src="assets/images/blog/blog-8.jpg" alt="blog">-->
                         </a>
                     </div>
                     <div class="blog-content-3 ml-150">
                         <div class="blog-category">
-                            <a href="#">Technology</a>
+                            <a href="#"><?= $model->category->name?></a>
                         </div>
-                        <h3><a href="#">Get Ready Fast For Fall Leaf</a></h3>
+                        <h3><a href="#"><?= $model->blog_name?></a></h3>
                         <div class="blog-meta">
                             <ul>
-                                <li><a href="#">Posted on December 5, 2018</a></li>
-                                <li>By <a href="#">Joe Doe</a></li>
+                                <li><a href="#">Posted on <?= Yii::$app->formatter->asDate($model->created_at)?></a></li>
+                                <li>By <a href="#"><?= $model->createdBy->username?></a></li>
                             </ul>
                         </div>
-                        <p>Chances are unless you are very lucky you will go thru many different relationships before you find your special someone. Finding your sole mate is like gambling. In poker and Chances are unless you are very lucky you will go thru many different relationships before you find your special someone. Finding your sole mate is like gambling. In poker and Chances are unless you are very lucky you will go thru many different relationships before you find your special someone. Finding your sole mate is like gambling. In poker and Chances are unless you are very lucky you will go thru many different relationships before you find your special someone. Finding your sole mate is like gambling. In poker and Chances are unless you are very lucky you will go thru many different relationships before you find your special someone. Finding your sole mate is like gambling. In poker and       </p>
-
-                        <p>Chances are unless you are very lucky you will go thru many different relationships before you find your special someone. Finding your sole mate is like gambling. In poker and Chances are unless you are very lucky you will go thru many different relationships before you find your special someone. Finding your sole mate is like gambling. In poker and Chances are unless you are very lucky you will go thru many different relationships before you find your special someone. Finding your sole mate is like gambling. In poker and Chances are unless you are very lucky you will go thru many different relationships before you find your special someone. Finding your sole mate is like gambling. In poker and Chances are unless you are very lucky you will go thru many different relationships before you find your special someone. Finding your sole mate is like gambling. In poker and </p>
-
-                        <p>Chances are unless you are very lucky you will go thru many different relationships before you find your special someone. Finding your sole mate is like gambling. In poker and Chances are unless you are very lucky you will go thru many different relationships before you find your special someone. Finding your sole mate is like gambling. In poker and Chances are unless you are very lucky you will go thru many different relationships before you find your special someone. Finding your sole mate is like gambling. In poker and Chances are unless you are very lucky you will go thru many different relationships before you find your special someone. Finding your sole mate is like gambling. In poker and Chances are unless you are very lucky you will go thru many different relationships before you find your special someone. Finding your sole mate is like gambling. In poker and
-                        </p>
-
+                        <?= $model->content?>
                     </div>
                 </div>
             </div>
