@@ -5,7 +5,6 @@ use yii\helpers\Html;
 $this->title = 'Blog Inner';
 /* @var $model \common\models\Blog*/
 ?>
-
 <div class="breadcrumb-area section-padding-1 bg-gray breadcrumb-ptb-2">
     <div class="container-fluid">
         <div class="breadcrumb-content text-center">
@@ -22,7 +21,6 @@ $this->title = 'Blog Inner';
         </div>
     </div>
 </div>
-
 <div class="blog-area-2 pt-100 pb-100">
     <div class="container">
         <div class="row">
@@ -31,7 +29,6 @@ $this->title = 'Blog Inner';
                     <div class="blog-img-3 mb-20">
                         <a href="#">
                             <?= Html::img(Yii::$app->urlManager->createAbsoluteUrl('admin/uploads/blog/'.$model->image))?>
-<!--                            <img src="assets/images/blog/blog-8.jpg" alt="blog">-->
                         </a>
                     </div>
                     <div class="blog-content-3 ml-150">
